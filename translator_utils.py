@@ -72,12 +72,6 @@ def getData(file):
 
 
 def load_dataset(train_file_en, train_file_de):
-    training_data = None
-    word2index = None
-    index2word = None
-    vocab = None
-    num_sentences_with_each_word = None
-
 
     if LOAD_DATASET:
         dataset_file = 'translate_dataset.p'
@@ -116,28 +110,13 @@ def shrink_file(no_of_lines=5000, input=None, output=None):
 
 
 def get_training_set():
-
-    """
-
-    train_X = load_dataset(train_file_en)
-
-
-    train_Y = getData(train_file_de)
-
-    """
     train_file_en = 'hello.csv'
-    #train_file_en = 'europarl-en-small'
     train_file_de = 'french.csv'
-    
-    #train_file_en = 'europarl-v7.fr-en.en'
-    #train_file_de = 'europarl-v7.fr-en.fr'
-
 
     train_X, train_Y = load_dataset(train_file_en, train_file_de)
-
-    #print ('Done tokenization!')
     return [train_X, train_Y]
 
+#returns array of form [(word, sentence_count),...]
 def num_sentences_with_unique_words(vocab, sentences):
     num_sentences = []
 

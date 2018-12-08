@@ -27,6 +27,7 @@ class TranslatorModel(object):
         self.hiddenDim = hiddenDim
         self.backPropogate_truncate = backPropogate_truncate
         
+        #creates an array of size hiddenDim X inputDim with random values
         self.We = np.random.uniform(-np.sqrt(1./inputDim), np.sqrt(1./inputDim), (hiddenDim, inputDim))
         self.Ue = np.random.uniform(-np.sqrt(1./hiddenDim), np.sqrt(1./hiddenDim), (hiddenDim, hiddenDim))
         self.Wd = np.random.uniform(-np.sqrt(1./targetDim), np.sqrt(1./targetDim), (hiddenDim, targetDim))
@@ -43,6 +44,7 @@ class TranslatorModel(object):
         L = -1 *np.sum(np.log(target_probability))
         return L
 
+    #(Loss = -1/N * Sum(y_i * log o_i))
     def totalLoss(self, x, y):
        
         L = 0
@@ -110,6 +112,7 @@ class TranslatorModel(object):
             target.append([vec2word_target[w] for w in y[:-1]])
         return target
 
+    #Returns gradients
     def backPropagate(self, x, y):
         lengthX = len(x)
         length = len(y)
@@ -131,6 +134,7 @@ class TranslatorModel(object):
         
         delta_o=np.asarray([weight*delta_o[t] for t in np.arange(len(y))])
         
+        #Iterate reverse
         for t in np.arange(length)[::-1]:
             #check for the calculations
             dLdP += np.outer(delta_o[t], s[t])
@@ -159,7 +163,7 @@ class TranslatorModel(object):
 
         return [dLdUe, dLdWe, dLdUd, dLdWd, dLdV, dLdP]
 
-    def SGD(self,x,y,eta):
+    def do_stoch_grad_descent(self,x,y,eta):
         dLdUe, dLdWe, dLdUd, dLdWd, dLdV, dLdP = self.backPropagate(x,y)
         self.Ue -= eta * dLdUe
         self.We -= eta * dLdWe
@@ -168,22 +172,20 @@ class TranslatorModel(object):
         self.V -= eta* dLdV
         self.P -= eta* dLdP
 
-    def train(self, x, y, learning_rate=0.01, nepoch=5, evaluate_loss_after=1):
+    def train(self, x, y, learning_rate=0.01, nepoch=5):
         
         losses = []
         num_examples_seen = 0
         for epoch in range(nepoch):
-            
-            if epoch % evaluate_loss_after == 0:
-                loss = self.totalLoss(x,y)
-                losses.append((num_examples_seen, loss))
-                time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                print('{} Epoch {}: Loss: {}, Learning Rate: {}'.format(time, epoch+1, loss, learning_rate))
-                
+
             for i in range(len(y)):
-                
-                self.SGD(x[i], y[i], learning_rate)
+                self.do_stoch_grad_descent(x[i], y[i], learning_rate)
                 num_examples_seen += 1
+
+            loss = self.totalLoss(x,y)
+            losses.append((num_examples_seen, loss))
+            time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            print('{} Epoch {}: Loss: {}, Learning Rate: {}'.format(time, epoch+1, loss, learning_rate))
         return losses
 
 read_en, read_fr = utils.load_dataset('hello.csv','french.csv')
