@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+import sys
 import pickle
 from datetime import datetime
 
@@ -223,12 +223,8 @@ def test_translation(word_to_index, word_to_index2, index_to_word2, model1, mode
     txt = ' '.join(index_to_word2[i] for i in oTest)
     print('English---> {} \n'.format(txt))
             
-def start():
-    epochs = 10
+def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name):
     learning_rate = 0.1
-    load_models = True
-    encoder_model_file_name = 'models/encoder_0.model'
-    decoder_model_file_name = 'models/decoder_0.model'
     model1 = None
     model2 = None
 
@@ -300,4 +296,15 @@ def start():
         print('{} Epoch {}: Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(time, epoch+1, loss, loss2, learning_rate))
 
 if __name__ == "__main__":
-    start()
+    try:
+        print(sys.argv)
+        epochs = int(sys.argv[1])
+        load_models = False
+        if sys.argv[2] == 'Y':
+            load_models = True
+            start(epochs, load_models, sys.argv[3], sys.argv[4])
+        else:
+            start(epochs, load_models, None, None)
+    except ValueError:
+        print("Invalid command! \nUse command like 'python lstmimpl.py 10(epochs) Y(Load Persisted Models) models/encoder_0.model models/decoder_0.model'")
+        sys.exit()
