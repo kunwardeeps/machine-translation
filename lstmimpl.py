@@ -1,0 +1,298 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pickle
+from datetime import datetime
+
+class lstmimpl(object):
+
+    def __init__(self, inputdim, outputdim, hiddendim, learning_rate, is_decoder, losses):        
+        self.inputdim = inputdim
+        self.hiddendim = hiddendim
+        self.is_decoder = is_decoder
+        self.outputdim = outputdim
+        self.losses = losses
+
+        self.hprev = np.zeros((hiddendim , 1))#previous batch hidden state stored
+        self.sprev = np.zeros((hiddendim , 1))#previous batch hidden state stored
+
+
+        #parameters
+        self.Why = np.random.randn(outputdim, hiddendim)*0.01#[y x h]
+        self.Wf = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
+        self.Wi = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
+        self.Wc = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
+        self.Wo = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
+        self.by = np.zeros((outputdim, 1))
+        self.bf = np.zeros((hiddendim, 1)) # output bias
+        self.bi = np.zeros((hiddendim, 1)) # output bias
+        self.bc = np.zeros((hiddendim, 1)) # output bias
+        self.bo = np.zeros((hiddendim, 1)) # output bias
+
+        #the Adagrad gradient update relies upon having a memory of the sum of squares of dparams
+        self.mWhy =  np.zeros_like(self.Why)
+        self.mWf =  np.zeros_like(self.Wf)
+        self.mWi =  np.zeros_like(self.Wi)
+        self.mWc =  np.zeros_like(self.Wc)
+        self.mWo =  np.zeros_like(self.Wo)
+        self.mby =  np.zeros_like(self.by)
+        self.mbf =  np.zeros_like(self.bf)
+        self.mbi =  np.zeros_like(self.bi)
+        self.mbc =  np.zeros_like(self.bc)
+        self.mbo =  np.zeros_like(self.bo)
+        self.learning_rate = learning_rate
+
+    def sigmoid(self, x):
+        return 1/(1+np.exp(-x))
+
+    def add_loss(self, loss):
+        self.losses.append(loss)
+
+    def train(self, inputs, targets):
+        xs, hs, xh, ys, ps, f, inp, cc, o, s = {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
+        hs[-1] = np.copy(self.hprev)
+        s[-1] = np.copy(self.sprev)  
+
+        dWhy = np.zeros_like(self.Why)
+        dWf = np.zeros_like(self.Wf)
+        dWi = np.zeros_like(self.Wi)
+        dWo = np.zeros_like(self.Wo)
+        dWc = np.zeros_like(self.Wc)
+        dby = np.zeros_like(self.by)
+        dbf = np.zeros_like(self.bf)
+        dbi = np.zeros_like(self.bi)
+        dbo = np.zeros_like(self.bo)
+        dbc = np.zeros_like(self.bc)
+        dhnext = np.zeros_like(self.hprev)
+        dsnext = np.zeros_like(self.sprev)
+
+        # Forward Propagation
+        loss = 0
+        for t in range(len(inputs)):            
+            xs[t] = np.zeros((self.inputdim,1)) 
+            # one hot encoding of word
+            if(self.is_decoder):
+                if(t==0):
+                    xs[t][inputs[t]] = 0
+                else:
+                    xs[t][inputs[t]] = 1
+            else:
+                xs[t][inputs[t]] = 1
+                
+            # Concatenate x and h
+            xh[t] = np.hstack((xs[t].ravel(), hs[t-1].ravel())).reshape(self.inputdim+self.hiddendim,1)
+            # Forget gate equation
+            f[t]  = self.sigmoid(np.dot(self.Wf, xh[t]) + self.bf)
+            # Input gate layer decides which values we’ll update. 
+            inp[t] = self.sigmoid(np.dot(self.Wi, xh[t]) + self.bi)
+            # C~ is denoted by cc
+            # Indicates new candidate values, that could be added to the state
+            cc[t] = np.tanh(np.dot(self.Wc, xh[t]) + self.bc)
+            # Update new state
+            s[t] = f[t] * s[t-1] + inp[t] * cc[t]
+            # This layer decides parts of the cell state we’re going to output
+            o[t] = self.sigmoid(np.dot(self.Wo, xh[t]) + self.bo)
+            # New hidden layer
+            hs[t] = o[t] * np.tanh(s[t])
+            # calculate cross-entropy loss
+            ys[t] = np.dot(self.Why, hs[t]) + self.by
+            ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) 
+            loss += -np.log(ps[t][targets[t],0]) 
+
+        # Backward propagation: Do gradient descent on above parameters from reverse
+        for t in reversed(range(len(inputs))):
+            # Back propagation for the softmax layer
+            dy = np.copy(ps[t])
+            dy[targets[t]] -= 1  
+            dWhy += np.dot(dy, hs[t].T)
+            dby += dy
+        
+            dh = np.dot(self.Why.T, dy) + dhnext
+            
+            # Back propagation for the output gate
+            do = o[t]*(1-o[t]) *dh * np.tanh(s[t])
+            dWo += np.dot(do, xh[t].T)
+            dbo += do
+            
+            # Back propagation for cell state
+            ds = dh * o[t] * (1-np.tanh(s[t])**2) + dsnext
+            
+            # Back propagation for input gate
+            dinp = inp[t]*(1-inp[t]) * cc[t] * ds
+            dWi += np.dot(dinp, xh[t].T)
+            dbi += dinp
+            
+            # Back propagation for new candidate values
+            dcc = (1-cc[t]**2) * inp[t] * ds
+            dWc += np.dot(dcc, xh[t].T)
+            dbc += dcc 
+            
+            # Back propagation for forget gate
+            df = f[t]*(1-f[t]) * s[t-1] * ds
+            dWf += np.dot(df, xh[t].T)
+            dbf += df       
+                  
+            # Combining all to find hnext
+            dxh = np.zeros_like(xh[t])
+            dxo = np.dot(self.Wo.T, do)
+            dxi = np.dot(self.Wi.T, dinp)
+            dxcc = np.dot(self.Wc.T, dcc)
+            dxf = np.dot(self.Wf.T, df)    
+            dxh = dxo + dxi + dxcc + dxf
+            
+            # Update values for future state 
+            dsnext = ds * f[t]
+            
+            # Update values for future hidden value 
+            dhnext = dxh[(xh[t].shape[0]-self.hiddendim):,:]
+        
+        self.hprev = hs[len(inputs)-1]
+        self.sprev = s[len(inputs)-1]
+
+        return loss
+    
+    def getHidden(self, xin):
+        h = np.zeros_like(self.hprev)
+        sp = np.zeros_like(self.sprev)
+        for t in range(len(xin)): 
+            x = np.zeros((self.inputdim, 1))
+            x[xin[t]] = 1
+            xh = np.hstack((x.ravel(), h.ravel())).reshape(self.inputdim+self.hiddendim,1)
+            f  = self.sigmoid(np.dot(self.Wf, xh) + self.bf)
+            inp = self.sigmoid(np.dot(self.Wi, xh) + self.bi)
+            cc = np.tanh(np.dot(self.Wc, xh) + self.bc)
+            sp = f * sp + inp * cc
+            o = self.sigmoid(np.dot(self.Wo, xh) + self.bo)
+            h = o * np.tanh(sp)             
+        return h, sp
+        
+    def translate(self, eos_index):
+        h = self.hprev
+        sp = self.sprev
+        x = np.zeros((self.inputdim,1))
+        y = np.zeros((self.inputdim,1))
+        indices = []
+        for ii in range(20):
+            xh = np.hstack((x.ravel(), h.ravel())).reshape(self.inputdim+self.hiddendim,1)
+            f  = self.sigmoid(np.dot(self.Wf, xh) + self.bf)
+            inp = self.sigmoid(np.dot(self.Wi, xh) + self.bi)
+            cc = np.tanh(np.dot(self.Wc, xh) + self.bc)
+            sp = f * sp + inp * cc
+            o = self.sigmoid(np.dot(self.Wo, xh) + self.bo)
+            h = o * np.tanh(sp)
+            y = np.dot(self.Why, h) + self.by
+            p = np.exp(y) / np.sum(np.exp(y))
+            i = p.argmax()
+            x = np.zeros((self.inputdim, 1))
+            x[i] = 1
+            indices.append(i)
+            if(eos_index == i):
+                break
+
+        return indices
+            
+def persist_models(n, encoder, decoder):
+    name1 = 'models/encoder_' + str(n) + '.model'
+    with open(name1, 'wb') as handle:
+        pickle.dump(encoder, handle)
+    name2 = 'models/decoder_' + str(n) + '.model'
+    with open(name2, 'wb') as handle:
+        pickle.dump(decoder, handle)
+
+def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
+    encoder = None
+    decoder = None
+    with open(encoder_model_file_name, 'rb') as handle:
+	    encoder = pickle.load(handle)
+    with open(decoder_model_file_name, 'rb') as handle:
+        decoder = pickle.load(handle)
+    return encoder, decoder
+            
+def start():
+    epochs = 10
+    learning_rate = 0.1
+    load_models = True
+    encoder_model_file_name = 'models/encoder_0.model'
+    decoder_model_file_name = 'models/decoder_0.model'
+    model1 = None
+    model2 = None
+
+    #read german text file
+    data = open('de-json.txt', 'r').read()
+    vocab = list(set(data.replace("\n", " <eos> ").split(" ")))
+    data = data.replace("\n", " <eos>\n").split("\n")
+    data_size, vocab_size = len(data), len(vocab)
+    print('data has {} sentences, {} unique words.'.format(data_size, vocab_size))
+
+    #dictionary for encoding and decoding from 1-of-k
+    word_to_index = { w:i for i,w in enumerate(vocab) }
+
+    #read english text file
+    data2 = open('en-json.txt', 'r').read()
+    vocab2 = list(set(data2.replace("\n", " <eos> ").split(" ")))
+    data2 = data2.replace("\n", " <eos>\n").split("\n")
+    data_size2, vocab_size2 = len(data2), len(vocab2)
+    print('data has {} sentences, {} unique words.'.format(data_size2, vocab_size2))
+
+    #dictionary for encoding and decoding from 1-of-k
+    word_to_index2 = { w:i for i,w in enumerate(vocab2) }
+    index_to_word2 = { i:w for i,w in enumerate(vocab2) }
+
+    if load_models == True:
+        model1, model2 = load_persisted_models(encoder_model_file_name, decoder_model_file_name)
+        print("Encoder loss after persisting: {}".format(model1.losses))
+    else:
+        model1 = lstmimpl(len(vocab), len(vocab), 100, learning_rate, False, [])
+        model2 = lstmimpl(len(vocab2), len(vocab2), 100, learning_rate, True, [])
+
+    n = 0
+    
+    for epoch in range(epochs):
+        for i in range(len(data)): 
+            
+            sentence = data[i]
+            words_list = sentence.split()
+            x = [word_to_index[w] for w in words_list[:-1]]        
+            y = [word_to_index[w] for w in words_list[1:]]
+            loss = model1.train(x, y)
+            
+            model2.hprev = model1.hprev
+            model2.sprev = model1.sprev
+            
+            sentence = data2[i]
+            words_list = ["is"] + sentence.split()
+            x = [word_to_index2[w] for w in words_list[:-1]] 
+            words_list = sentence.split()
+            y = [word_to_index2[w] for w in words_list]
+            loss2 = model2.train(x, y)
+            
+            if n%50==0:
+                time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                print('{} Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(time, n, loss, loss2, learning_rate))
+                model1.add_loss(loss)
+                model2.add_loss(loss2)
+
+            if n%100==0:
+                print('Testing Translate: German to English')
+                test = "ich habe ein buch dexp <eos>"
+                print('German----> ', test)
+                testArray = test.split()
+                x = [word_to_index[w] for w in testArray[:-1]]
+                htest, stest = model1.getHidden(x)
+                model2.hprev = htest 
+                model2.sprev = stest
+                eos_index = word_to_index2['<eos>'.strip()]
+                oTest = model2.translate(eos_index)
+                txt = ' '.join(index_to_word2[i] for i in oTest)
+                print('English---> {} \n'.format(txt))
+                
+            model1.hprev = np.zeros((100,1))
+            model1.sprev = np.zeros((100,1))
+
+            n += 1 
+
+        persist_models(epoch, model1, model2)
+        time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print('{} Epoch {}: Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(time, epoch+1, loss, loss2, learning_rate))
+
+if __name__ == "__main__":
+    start()

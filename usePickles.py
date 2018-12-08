@@ -1,6 +1,5 @@
 import pickle
-from LSTM import LSTM
-import matplotlib.pyplot as plt
+from lstmimpl import lstmimpl
 
 iteration = 400000
 
@@ -15,23 +14,6 @@ with open('pickles/encoderloss-'+ str(iteration) + '.pickle', 'r') as handle:
 
 with open('pickles/decoderloss-'+ str(iteration) +'.pickle', 'r') as handle:
         dlos = pickle.load(handle)
-
-
-maxError = 70
-for i in range(len(elos)):
-    if elos[i]>maxError:
-        elos[i] = maxError
-
-for i in range(len(elos)):
-    if dlos[i]>maxError:
-        dlos[i] = maxError
-
-plt.plot(range(len(elos)), elos, 'b', label='Encoder loss')
-plt.plot(range(len(dlos)), dlos, 'g', label='Decoder loss')
-plt.xlabel('Time at every 10 epochs')
-plt.ylabel('loss')
-plt.legend()
-plt.show()
 
 data = open('de-json.txt', 'r').read() # should be simple plain text file
 words = list(set(data.replace("\n", " <eos> ").split(" ")))
