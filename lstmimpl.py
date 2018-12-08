@@ -197,6 +197,7 @@ def persist_models(n, encoder, decoder):
     name2 = 'models/decoder_' + str(n) + '.model'
     with open(name2, 'wb') as handle:
         pickle.dump(decoder, handle)
+    print("Models saved successfully!")
 
 def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
     encoder = None
@@ -205,7 +206,22 @@ def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
 	    encoder = pickle.load(handle)
     with open(decoder_model_file_name, 'rb') as handle:
         decoder = pickle.load(handle)
+    print("Models loaded successfully!")
     return encoder, decoder
+
+def test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2):
+    print('Testing Translate: German to English')
+    test = "ich habe ein buch dexp <eos>"
+    print('German----> ', test)
+    testArray = test.split()
+    x = [word_to_index[w] for w in testArray[:-1]]
+    htest, stest = model1.getHidden(x)
+    model2.hprev = htest 
+    model2.sprev = stest
+    eos_index = word_to_index2['<eos>'.strip()]
+    oTest = model2.translate(eos_index)
+    txt = ' '.join(index_to_word2[i] for i in oTest)
+    print('English---> {} \n'.format(txt))
             
 def start():
     epochs = 10
@@ -272,18 +288,7 @@ def start():
                 model2.add_loss(loss2)
 
             if n%100==0:
-                print('Testing Translate: German to English')
-                test = "ich habe ein buch dexp <eos>"
-                print('German----> ', test)
-                testArray = test.split()
-                x = [word_to_index[w] for w in testArray[:-1]]
-                htest, stest = model1.getHidden(x)
-                model2.hprev = htest 
-                model2.sprev = stest
-                eos_index = word_to_index2['<eos>'.strip()]
-                oTest = model2.translate(eos_index)
-                txt = ' '.join(index_to_word2[i] for i in oTest)
-                print('English---> {} \n'.format(txt))
+                test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2)
                 
             model1.hprev = np.zeros((100,1))
             model1.sprev = np.zeros((100,1))
