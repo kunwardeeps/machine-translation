@@ -162,6 +162,17 @@ class lstmimpl(object):
             
             # Update values for future hidden value 
             dhnext = dxh[(xh[t].shape[0]-self.hiddendim):,:]
+
+            for dparam in [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby]:
+                np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
+  
+
+            #update RNN parameters according to Adagrad
+            for param, dparam, mem in zip([self.Wf, self.Wi, self.Wc, self.Wo, self.Why, self.bf, self.bi, self.bc, self.bo, self.by], 
+                                    [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby], 
+                                    [self.mWf, self.mWi,self.mWc,self.mWo, self.mWhy,self.mbf,self.mbi,self.mbc,self.mbo, self.mby]):
+                mem += dparam * dparam
+                param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
         
         self.hprev = hs[len(inputs)-1]
         self.sprev = s[len(inputs)-1]
@@ -295,13 +306,11 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
             words_list = sentence.split()
             y = [word_to_index2[w] for w in words_list]
             loss2 = model2.train(x, y)
-            
-            if n%50==0:
-                logger.info('Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(n, loss, loss2, learning_rate))
-                model1.add_loss(loss)
-                model2.add_loss(loss2)
 
             if n%100==0:
+                logger.info('Epoch: {}, Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(epoch, n, loss, loss2, learning_rate))
+                model1.add_loss(loss)
+                model2.add_loss(loss2)
                 test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2)
                 
             model1.hprev = np.zeros((100,1))
@@ -310,7 +319,6 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
             n += 1 
 
         persist_models(epoch, model1, model2)
-        logger.info('Epoch {}: Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(epoch+1, loss, loss2, learning_rate))
 
 if __name__ == "__main__":
     try:
