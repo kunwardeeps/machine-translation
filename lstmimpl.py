@@ -1,7 +1,25 @@
 import numpy as np
 import sys
 import pickle
+import logging
 from datetime import datetime
+
+# create logger with 'spam_application'
+logger = logging.getLogger('lstmimpl')
+logger.setLevel(logging.DEBUG)
+# create file handler which logs even debug messages
+fh = logging.FileHandler('lstm.log')
+fh.setLevel(logging.DEBUG)
+# create console handler with a higher log level
+ch = logging.StreamHandler()
+ch.setLevel(logging.ERROR)
+# create formatter and add it to the handlers
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+ch.setFormatter(formatter)
+# add the handlers to the logger
+logger.addHandler(fh)
+logger.addHandler(ch)
 
 class lstmimpl(object):
 
@@ -197,7 +215,7 @@ def persist_models(n, encoder, decoder):
     name2 = 'models/decoder_' + str(n) + '.model'
     with open(name2, 'wb') as handle:
         pickle.dump(decoder, handle)
-    print("Models saved successfully!")
+    logger.info("Models saved successfully!")
 
 def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
     encoder = None
@@ -206,13 +224,13 @@ def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
 	    encoder = pickle.load(handle)
     with open(decoder_model_file_name, 'rb') as handle:
         decoder = pickle.load(handle)
-    print("Models loaded successfully!")
+    logger.info("Models loaded successfully!")
     return encoder, decoder
 
 def test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2):
-    print('Testing Translate: German to English')
+    logger.info('Testing Translate: German to English')
     test = "ich habe ein buch dexp <eos>"
-    print('German----> ', test)
+    logger.info('German----> '+ test)
     testArray = test.split()
     x = [word_to_index[w] for w in testArray[:-1]]
     htest, stest = model1.getHidden(x)
@@ -221,9 +239,10 @@ def test_translation(word_to_index, word_to_index2, index_to_word2, model1, mode
     eos_index = word_to_index2['<eos>'.strip()]
     oTest = model2.translate(eos_index)
     txt = ' '.join(index_to_word2[i] for i in oTest)
-    print('English---> {} \n'.format(txt))
+    logger.info('English---> {} \n'.format(txt))
             
 def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name):
+    logger.info("=========================Execution Starts===========================")
     learning_rate = 0.1
     model1 = None
     model2 = None
@@ -233,7 +252,7 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
     vocab = list(set(data.replace("\n", " <eos> ").split(" ")))
     data = data.replace("\n", " <eos>\n").split("\n")
     data_size, vocab_size = len(data), len(vocab)
-    print('data has {} sentences, {} unique words.'.format(data_size, vocab_size))
+    logger.info('data has {} sentences, {} unique words.'.format(data_size, vocab_size))
 
     #dictionary for encoding and decoding from 1-of-k
     word_to_index = { w:i for i,w in enumerate(vocab) }
@@ -243,7 +262,7 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
     vocab2 = list(set(data2.replace("\n", " <eos> ").split(" ")))
     data2 = data2.replace("\n", " <eos>\n").split("\n")
     data_size2, vocab_size2 = len(data2), len(vocab2)
-    print('data has {} sentences, {} unique words.'.format(data_size2, vocab_size2))
+    logger.info('data has {} sentences, {} unique words.'.format(data_size2, vocab_size2))
 
     #dictionary for encoding and decoding from 1-of-k
     word_to_index2 = { w:i for i,w in enumerate(vocab2) }
@@ -251,7 +270,7 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
 
     if load_models == True:
         model1, model2 = load_persisted_models(encoder_model_file_name, decoder_model_file_name)
-        print("Encoder loss after persisting: {}".format(model1.losses))
+        logger.info("Encoder loss after persisting: {}".format(model1.losses))
     else:
         model1 = lstmimpl(len(vocab), len(vocab), 100, learning_rate, False, [])
         model2 = lstmimpl(len(vocab2), len(vocab2), 100, learning_rate, True, [])
@@ -278,8 +297,7 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
             loss2 = model2.train(x, y)
             
             if n%50==0:
-                time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                print('{} Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(time, n, loss, loss2, learning_rate))
+                logger.info('Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(n, loss, loss2, learning_rate))
                 model1.add_loss(loss)
                 model2.add_loss(loss2)
 
@@ -292,12 +310,11 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
             n += 1 
 
         persist_models(epoch, model1, model2)
-        time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        print('{} Epoch {}: Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(time, epoch+1, loss, loss2, learning_rate))
+        logger.info('Epoch {}: Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(epoch+1, loss, loss2, learning_rate))
 
 if __name__ == "__main__":
     try:
-        print(sys.argv)
+        logger.info(sys.argv)
         epochs = int(sys.argv[1])
         load_models = False
         if sys.argv[2] == 'Y':
@@ -306,5 +323,5 @@ if __name__ == "__main__":
         else:
             start(epochs, load_models, None, None)
     except ValueError:
-        print("Invalid command! \nUse command like 'python lstmimpl.py 10(epochs) Y(Load Persisted Models) models/encoder_0.model models/decoder_0.model'")
+        logger.error("Invalid command! \nUse command like 'python lstmimpl.py 10(epochs) Y(Load Persisted Models) models/encoder_0.model models/decoder_0.model'")
         sys.exit()
