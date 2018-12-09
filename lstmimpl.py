@@ -163,16 +163,16 @@ class lstmimpl(object):
             # Update values for future hidden value 
             dhnext = dxh[(xh[t].shape[0]-self.hiddendim):,:]
 
-            for dparam in [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby]:
-                np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  
+        for dparam in [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby]:
+            np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
 
-            #update RNN parameters according to Adagrad
-            for param, dparam, mem in zip([self.Wf, self.Wi, self.Wc, self.Wo, self.Why, self.bf, self.bi, self.bc, self.bo, self.by], 
-                                    [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby], 
-                                    [self.mWf, self.mWi,self.mWc,self.mWo, self.mWhy,self.mbf,self.mbi,self.mbc,self.mbo, self.mby]):
-                mem += dparam * dparam
-                param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+
+        #update RNN parameters according to Adagrad
+        for param, dparam, mem in zip([self.Wf, self.Wi, self.Wc, self.Wo, self.Why, self.bf, self.bi, self.bc, self.bo, self.by], 
+                                [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby], 
+                                [self.mWf, self.mWi,self.mWc,self.mWo, self.mWhy,self.mbf,self.mbi,self.mbc,self.mbo, self.mby]):
+            mem += dparam * dparam
+            param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
         
         self.hprev = hs[len(inputs)-1]
         self.sprev = s[len(inputs)-1]
@@ -241,7 +241,7 @@ def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
 def test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2):
     logger.info('Testing Translate: German to English')
     test = "ich habe ein buch dexp <eos>"
-    logger.info('German----> '+ test)
+    logger.info('German: '+ test)
     testArray = test.split()
     x = [word_to_index[w] for w in testArray[:-1]]
     htest, stest = model1.getHidden(x)
@@ -250,7 +250,7 @@ def test_translation(word_to_index, word_to_index2, index_to_word2, model1, mode
     eos_index = word_to_index2['<eos>'.strip()]
     oTest = model2.translate(eos_index)
     txt = ' '.join(index_to_word2[i] for i in oTest)
-    logger.info('English---> {} \n'.format(txt))
+    logger.info('English: {} \n'.format(txt))
             
 def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name):
     logger.info("=========================Execution Starts===========================")
