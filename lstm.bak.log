@@ -1,0 +1,2450 @@
+2018-12-08 16:11:36,090 - lstmimpl - INFO - ['lstmimpl.py', '1', 'N']
+2018-12-08 16:11:36,090 - lstmimpl - INFO - =========================Execution Starts===========================
+2018-12-08 16:11:36,137 - lstmimpl - INFO - data has 11998 sentences, 6297 unique words.
+2018-12-08 16:11:36,183 - lstmimpl - INFO - data has 12027 sentences, 4742 unique words.
+2018-12-08 16:11:40,245 - lstmimpl - INFO - Epoch: 0, Iteration: 0, Encoder Loss: 43.73947043522147, Decoder Loss: 50.78508930648519, Learning Rate: 0.1
+2018-12-08 16:11:40,245 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-08 16:11:40,246 - lstmimpl - INFO - German----> ich habe ein buch dexp <eos>
+2018-12-08 16:11:40,419 - lstmimpl - INFO - English---> enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp enxp 
+
+2018-12-08 16:15:54,063 - lstmimpl - INFO - Epoch: 0, Iteration: 100, Encoder Loss: 17.29638134537287, Decoder Loss: 23.555641169207263, Learning Rate: 0.1
+2018-12-08 16:15:54,064 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-08 16:15:54,064 - lstmimpl - INFO - German----> ich habe ein buch dexp <eos>
+2018-12-08 16:15:54,133 - lstmimpl - INFO - English---> i is is enxp enxp <eos> 
+
+2018-12-08 16:46:59,859 - lstmimpl - INFO - ['/c_drive/Users/KUNWAR/IdeaProjects/ML Project/lstmimpl.py']
+2018-12-08 16:47:40,686 - lstmimpl - INFO - ['/c_drive/Users/KUNWAR/IdeaProjects/ML Project/lstmimpl.py', '1', 'N']
+2018-12-08 16:47:47,552 - lstmimpl - INFO - =========================Execution Starts===========================
+2018-12-08 16:47:49,660 - lstmimpl - INFO - data has 11998 sentences, 6297 unique words.
+2018-12-08 16:47:51,057 - lstmimpl - INFO - data has 12027 sentences, 4742 unique words.
+2018-12-08 16:48:08,522 - lstmimpl - INFO - Epoch: 0, Iteration: 0, Encoder Loss: 43.73979394994262, Decoder Loss: 50.78679954479462, Learning Rate: 0.1
+2018-12-08 16:48:09,502 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-08 16:48:09,504 - lstmimpl - INFO - German----> ich habe ein buch dexp <eos>
+2018-12-08 16:48:09,611 - lstmimpl - INFO - English---> <eos> 
+
+2018-12-09 00:59:41,388 - lstmimpl - INFO - ['lstmimpl.py', 'N', '10']
+2018-12-09 00:59:41,426 - lstmimpl - ERROR - Invalid command! 
+Use command like 'python lstmimpl.py 10(epochs) Y(Load Persisted Models) models/encoder_0.model models/decoder_0.model'
+2018-12-09 00:59:56,496 - lstmimpl - INFO - ['lstmimpl.py', '10', 'N']
+2018-12-09 00:59:56,496 - lstmimpl - INFO - =========================Execution Starts===========================
+2018-12-09 00:59:56,589 - lstmimpl - INFO - data has 11998 sentences, 6297 unique words.
+2018-12-09 00:59:56,652 - lstmimpl - INFO - data has 12027 sentences, 4742 unique words.
+2018-12-09 00:59:58,648 - lstmimpl - INFO - Epoch: 0, Iteration: 0, Encoder Loss: 43.73958771781925, Decoder Loss: 50.78632395204833, Learning Rate: 0.1
+2018-12-09 00:59:58,649 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 00:59:58,650 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 00:59:58,685 - lstmimpl - INFO - English: we <eos> 
+
+2018-12-09 01:01:28,325 - lstmimpl - INFO - Epoch: 0, Iteration: 100, Encoder Loss: 12.01271635317, Decoder Loss: 23.904775136173768, Learning Rate: 0.1
+2018-12-09 01:01:28,326 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:01:28,326 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:01:28,405 - lstmimpl - INFO - English: i is is enxp enxp <eos> 
+
+2018-12-09 01:02:59,767 - lstmimpl - INFO - Epoch: 0, Iteration: 200, Encoder Loss: 25.11690254602104, Decoder Loss: 27.33022712199525, Learning Rate: 0.1
+2018-12-09 01:02:59,768 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:02:59,768 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:02:59,855 - lstmimpl - INFO - English: he is a keys enxp <eos> 
+
+2018-12-09 01:04:24,693 - lstmimpl - INFO - Epoch: 0, Iteration: 300, Encoder Loss: 19.956080982967567, Decoder Loss: 22.881716425187054, Learning Rate: 0.1
+2018-12-09 01:04:24,694 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:04:24,733 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:04:24,813 - lstmimpl - INFO - English: tom is enxp enxp enxp <eos> 
+
+2018-12-09 01:05:57,507 - lstmimpl - INFO - Epoch: 0, Iteration: 400, Encoder Loss: 15.53010937615004, Decoder Loss: 19.117826043092865, Learning Rate: 0.1
+2018-12-09 01:05:57,508 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:05:57,508 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:05:57,569 - lstmimpl - INFO - English: i is my enxp enxp <eos> 
+
+2018-12-09 01:07:34,068 - lstmimpl - INFO - Epoch: 0, Iteration: 500, Encoder Loss: 22.10031506101669, Decoder Loss: 21.8350769633798, Learning Rate: 0.1
+2018-12-09 01:07:34,068 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:07:34,069 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:07:34,140 - lstmimpl - INFO - English: i is a song enxp <eos> 
+
+2018-12-09 01:09:09,172 - lstmimpl - INFO - Epoch: 0, Iteration: 600, Encoder Loss: 15.338049488674573, Decoder Loss: 18.92377663795785, Learning Rate: 0.1
+2018-12-09 01:09:09,173 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:09:09,173 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:09:09,250 - lstmimpl - INFO - English: i is my song enxp <eos> 
+
+2018-12-09 01:10:36,867 - lstmimpl - INFO - Epoch: 0, Iteration: 700, Encoder Loss: 24.665647501230474, Decoder Loss: 26.24485155098625, Learning Rate: 0.1
+2018-12-09 01:10:36,868 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:10:36,869 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:10:36,946 - lstmimpl - INFO - English: i was a song enxp <eos> 
+
+2018-12-09 01:12:02,734 - lstmimpl - INFO - Epoch: 0, Iteration: 800, Encoder Loss: 22.17160488573323, Decoder Loss: 22.896137420994375, Learning Rate: 0.1
+2018-12-09 01:12:02,735 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:12:02,735 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:12:02,802 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:13:35,507 - lstmimpl - INFO - Epoch: 0, Iteration: 900, Encoder Loss: 22.382698968440657, Decoder Loss: 19.30462730325933, Learning Rate: 0.1
+2018-12-09 01:13:35,508 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:13:35,509 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:13:35,637 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:15:04,370 - lstmimpl - INFO - Epoch: 0, Iteration: 1000, Encoder Loss: 28.917431585631856, Decoder Loss: 22.514531788622293, Learning Rate: 0.1
+2018-12-09 01:15:04,371 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:15:04,371 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:15:04,447 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:16:30,794 - lstmimpl - INFO - Epoch: 0, Iteration: 1100, Encoder Loss: 24.69788791307114, Decoder Loss: 24.016207135785137, Learning Rate: 0.1
+2018-12-09 01:16:30,795 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:16:30,795 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:16:30,871 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:17:57,926 - lstmimpl - INFO - Epoch: 0, Iteration: 1200, Encoder Loss: 21.614715080677918, Decoder Loss: 25.58593666606524, Learning Rate: 0.1
+2018-12-09 01:17:57,927 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:17:57,929 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:17:58,052 - lstmimpl - INFO - English: i have a doctor enxp <eos> 
+
+2018-12-09 01:19:21,800 - lstmimpl - INFO - Epoch: 0, Iteration: 1300, Encoder Loss: 18.38562851188892, Decoder Loss: 18.058008606780902, Learning Rate: 0.1
+2018-12-09 01:19:21,801 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:19:21,801 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:19:21,852 - lstmimpl - INFO - English: i love the works enxp <eos> 
+
+2018-12-09 01:20:45,165 - lstmimpl - INFO - Epoch: 0, Iteration: 1400, Encoder Loss: 21.81062057374858, Decoder Loss: 20.731108062301995, Learning Rate: 0.1
+2018-12-09 01:20:45,166 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:20:45,166 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:20:45,235 - lstmimpl - INFO - English: i like a song enxp <eos> 
+
+2018-12-09 01:22:08,578 - lstmimpl - INFO - Epoch: 0, Iteration: 1500, Encoder Loss: 17.239554902934096, Decoder Loss: 19.93744114366501, Learning Rate: 0.1
+2018-12-09 01:22:08,579 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:22:08,579 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:22:08,631 - lstmimpl - INFO - English: i have a music enxp <eos> 
+
+2018-12-09 01:23:32,300 - lstmimpl - INFO - Epoch: 0, Iteration: 1600, Encoder Loss: 20.862477147566487, Decoder Loss: 23.682501177936786, Learning Rate: 0.1
+2018-12-09 01:23:32,300 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:23:32,301 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:23:32,402 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:25:02,885 - lstmimpl - INFO - Epoch: 0, Iteration: 1700, Encoder Loss: 12.856585278494897, Decoder Loss: 13.784264862199143, Learning Rate: 0.1
+2018-12-09 01:25:02,886 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:25:02,887 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:25:02,973 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:26:28,232 - lstmimpl - INFO - Epoch: 0, Iteration: 1800, Encoder Loss: 20.70178101660153, Decoder Loss: 20.898481107848866, Learning Rate: 0.1
+2018-12-09 01:26:28,233 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:26:28,234 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:26:28,313 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:27:51,871 - lstmimpl - INFO - Epoch: 0, Iteration: 1900, Encoder Loss: 18.089746282224695, Decoder Loss: 23.00514103106207, Learning Rate: 0.1
+2018-12-09 01:27:51,872 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:27:51,872 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:27:51,941 - lstmimpl - INFO - English: i am a whore enxp <eos> 
+
+2018-12-09 01:29:15,676 - lstmimpl - INFO - Epoch: 0, Iteration: 2000, Encoder Loss: 14.163811971787531, Decoder Loss: 11.832728551533153, Learning Rate: 0.1
+2018-12-09 01:29:15,677 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:29:15,677 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:29:15,727 - lstmimpl - INFO - English: i am a whore enxp <eos> 
+
+2018-12-09 01:30:38,716 - lstmimpl - INFO - Epoch: 0, Iteration: 2100, Encoder Loss: 19.536204425919596, Decoder Loss: 23.779957192536994, Learning Rate: 0.1
+2018-12-09 01:30:38,717 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:30:38,717 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:30:38,789 - lstmimpl - INFO - English: i am a song enxp <eos> 
+
+2018-12-09 01:32:02,265 - lstmimpl - INFO - Epoch: 0, Iteration: 2200, Encoder Loss: 14.602570866966424, Decoder Loss: 14.512437672813915, Learning Rate: 0.1
+2018-12-09 01:32:02,266 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:32:02,266 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:32:02,316 - lstmimpl - INFO - English: i have a forgetful enxp <eos> 
+
+2018-12-09 01:33:25,864 - lstmimpl - INFO - Epoch: 0, Iteration: 2300, Encoder Loss: 15.56850954487871, Decoder Loss: 14.805782426565248, Learning Rate: 0.1
+2018-12-09 01:33:25,865 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:33:25,865 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:33:25,914 - lstmimpl - INFO - English: i have a doctor enxp <eos> 
+
+2018-12-09 01:34:49,618 - lstmimpl - INFO - Epoch: 0, Iteration: 2400, Encoder Loss: 17.51452775970462, Decoder Loss: 32.653054432637944, Learning Rate: 0.1
+2018-12-09 01:34:49,619 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:34:49,619 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:34:49,689 - lstmimpl - INFO - English: i have a dog enxp <eos> 
+
+2018-12-09 01:36:13,027 - lstmimpl - INFO - Epoch: 0, Iteration: 2500, Encoder Loss: 28.131176855092495, Decoder Loss: 31.485938263499595, Learning Rate: 0.1
+2018-12-09 01:36:13,028 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:36:13,028 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:36:13,114 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 01:37:36,348 - lstmimpl - INFO - Epoch: 0, Iteration: 2600, Encoder Loss: 18.073422781357856, Decoder Loss: 15.749494890419232, Learning Rate: 0.1
+2018-12-09 01:37:36,349 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:37:36,349 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:37:36,403 - lstmimpl - INFO - English: i dont a lot enxp <eos> 
+
+2018-12-09 01:38:59,460 - lstmimpl - INFO - Epoch: 0, Iteration: 2700, Encoder Loss: 21.16225529152903, Decoder Loss: 21.65825373466199, Learning Rate: 0.1
+2018-12-09 01:38:59,461 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:38:59,462 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:38:59,532 - lstmimpl - INFO - English: i am a lot enxp <eos> 
+
+2018-12-09 01:40:23,864 - lstmimpl - INFO - Epoch: 0, Iteration: 2800, Encoder Loss: 13.050748424405844, Decoder Loss: 21.83556359206015, Learning Rate: 0.1
+2018-12-09 01:40:23,865 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:40:23,865 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:40:23,918 - lstmimpl - INFO - English: i dont a lot enxp <eos> 
+
+2018-12-09 01:41:47,168 - lstmimpl - INFO - Epoch: 0, Iteration: 2900, Encoder Loss: 22.64910112860165, Decoder Loss: 25.239363899632213, Learning Rate: 0.1
+2018-12-09 01:41:47,169 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:41:47,169 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:41:47,223 - lstmimpl - INFO - English: i dont like enxp enxp <eos> 
+
+2018-12-09 01:43:11,219 - lstmimpl - INFO - Epoch: 0, Iteration: 3000, Encoder Loss: 17.16147081915074, Decoder Loss: 18.71770787040177, Learning Rate: 0.1
+2018-12-09 01:43:11,220 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:43:11,220 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:43:11,298 - lstmimpl - INFO - English: i dont like fly enxp <eos> 
+
+2018-12-09 01:44:34,923 - lstmimpl - INFO - Epoch: 0, Iteration: 3100, Encoder Loss: 24.41485441722316, Decoder Loss: 29.0758310749532, Learning Rate: 0.1
+2018-12-09 01:44:34,924 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:44:34,924 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:44:34,995 - lstmimpl - INFO - English: i dont a question enxp <eos> 
+
+2018-12-09 01:45:59,135 - lstmimpl - INFO - Epoch: 0, Iteration: 3200, Encoder Loss: 21.21780415953635, Decoder Loss: 22.183971726740346, Learning Rate: 0.1
+2018-12-09 01:45:59,136 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:45:59,137 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:45:59,218 - lstmimpl - INFO - English: i dont know it enxp <eos> 
+
+2018-12-09 01:47:23,192 - lstmimpl - INFO - Epoch: 0, Iteration: 3300, Encoder Loss: 28.011868107514662, Decoder Loss: 24.993342726364997, Learning Rate: 0.1
+2018-12-09 01:47:23,192 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:47:23,193 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:47:23,263 - lstmimpl - INFO - English: i need a map enxp <eos> 
+
+2018-12-09 01:48:47,218 - lstmimpl - INFO - Epoch: 0, Iteration: 3400, Encoder Loss: 18.335345304280008, Decoder Loss: 15.893475134915382, Learning Rate: 0.1
+2018-12-09 01:48:47,219 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:48:47,219 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:48:47,268 - lstmimpl - INFO - English: i dont like it enxp <eos> 
+
+2018-12-09 01:50:11,194 - lstmimpl - INFO - Epoch: 0, Iteration: 3500, Encoder Loss: 15.982220720478798, Decoder Loss: 18.716220090750074, Learning Rate: 0.1
+2018-12-09 01:50:11,195 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:50:11,196 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:50:11,253 - lstmimpl - INFO - English: i dont like fly enxp <eos> 
+
+2018-12-09 01:51:35,231 - lstmimpl - INFO - Epoch: 0, Iteration: 3600, Encoder Loss: 16.410971864290826, Decoder Loss: 18.96881407727188, Learning Rate: 0.1
+2018-12-09 01:51:35,232 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:51:35,232 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:51:35,289 - lstmimpl - INFO - English: i dont like it enxp <eos> 
+
+2018-12-09 01:52:58,824 - lstmimpl - INFO - Epoch: 0, Iteration: 3700, Encoder Loss: 24.409297603981127, Decoder Loss: 20.901037654416765, Learning Rate: 0.1
+2018-12-09 01:52:58,824 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:52:58,825 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:52:58,878 - lstmimpl - INFO - English: i dont like it enxp <eos> 
+
+2018-12-09 01:54:22,868 - lstmimpl - INFO - Epoch: 0, Iteration: 3800, Encoder Loss: 28.567400314443518, Decoder Loss: 32.525784004340544, Learning Rate: 0.1
+2018-12-09 01:54:22,868 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:54:22,869 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:54:22,947 - lstmimpl - INFO - English: i dont know it enxp <eos> 
+
+2018-12-09 01:55:46,900 - lstmimpl - INFO - Epoch: 0, Iteration: 3900, Encoder Loss: 21.945532188470327, Decoder Loss: 17.771246346564332, Learning Rate: 0.1
+2018-12-09 01:55:46,901 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:55:46,902 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:55:46,956 - lstmimpl - INFO - English: i dont know it enxp <eos> 
+
+2018-12-09 01:57:10,784 - lstmimpl - INFO - Epoch: 0, Iteration: 4000, Encoder Loss: 9.462513250322404, Decoder Loss: 11.479898884130254, Learning Rate: 0.1
+2018-12-09 01:57:10,785 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:57:10,785 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:57:10,860 - lstmimpl - INFO - English: i dont a serious enxp <eos> 
+
+2018-12-09 01:58:34,529 - lstmimpl - INFO - Epoch: 0, Iteration: 4100, Encoder Loss: 23.487325615274013, Decoder Loss: 21.572896787460824, Learning Rate: 0.1
+2018-12-09 01:58:34,530 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:58:34,530 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:58:34,639 - lstmimpl - INFO - English: i dont like that enxp <eos> 
+
+2018-12-09 01:59:58,018 - lstmimpl - INFO - Epoch: 0, Iteration: 4200, Encoder Loss: 19.764717247589964, Decoder Loss: 21.547466805550876, Learning Rate: 0.1
+2018-12-09 01:59:58,019 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 01:59:58,020 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 01:59:58,116 - lstmimpl - INFO - English: tom is a doctor enxp <eos> 
+
+2018-12-09 02:01:21,256 - lstmimpl - INFO - Epoch: 0, Iteration: 4300, Encoder Loss: 27.792576317693197, Decoder Loss: 36.76222897771201, Learning Rate: 0.1
+2018-12-09 02:01:21,257 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:01:21,257 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:01:21,331 - lstmimpl - INFO - English: i love the song enxp <eos> 
+
+2018-12-09 02:02:44,883 - lstmimpl - INFO - Epoch: 0, Iteration: 4400, Encoder Loss: 12.7114617664828, Decoder Loss: 17.801809201214652, Learning Rate: 0.1
+2018-12-09 02:02:44,884 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:02:44,885 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:02:44,933 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:04:09,250 - lstmimpl - INFO - Epoch: 0, Iteration: 4500, Encoder Loss: 17.125077147110886, Decoder Loss: 17.937796382843068, Learning Rate: 0.1
+2018-12-09 02:04:09,251 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:04:09,251 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:04:09,311 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:05:32,534 - lstmimpl - INFO - Epoch: 0, Iteration: 4600, Encoder Loss: 20.57226405819836, Decoder Loss: 24.339413027013283, Learning Rate: 0.1
+2018-12-09 02:05:32,535 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:05:32,535 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:05:32,659 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:06:55,638 - lstmimpl - INFO - Epoch: 0, Iteration: 4700, Encoder Loss: 12.98078060074341, Decoder Loss: 22.75029574472276, Learning Rate: 0.1
+2018-12-09 02:06:55,639 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:06:55,639 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:06:55,804 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:08:18,923 - lstmimpl - INFO - Epoch: 0, Iteration: 4800, Encoder Loss: 14.485320525869408, Decoder Loss: 15.700155543775256, Learning Rate: 0.1
+2018-12-09 02:08:18,923 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:08:18,924 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:08:19,009 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:09:43,407 - lstmimpl - INFO - Epoch: 0, Iteration: 4900, Encoder Loss: 35.057943895441916, Decoder Loss: 36.21192301142497, Learning Rate: 0.1
+2018-12-09 02:09:43,408 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:09:43,409 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:09:43,463 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:11:07,086 - lstmimpl - INFO - Epoch: 0, Iteration: 5000, Encoder Loss: 18.55887067962809, Decoder Loss: 16.92441702997683, Learning Rate: 0.1
+2018-12-09 02:11:07,088 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:11:07,088 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:11:07,186 - lstmimpl - INFO - English: i dont like yesterday enxp <eos> 
+
+2018-12-09 02:12:30,798 - lstmimpl - INFO - Epoch: 0, Iteration: 5100, Encoder Loss: 16.948863976445676, Decoder Loss: 21.698207226665627, Learning Rate: 0.1
+2018-12-09 02:12:30,799 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:12:30,800 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:12:30,860 - lstmimpl - INFO - English: i dont like yesterday enxp <eos> 
+
+2018-12-09 02:13:54,520 - lstmimpl - INFO - Epoch: 0, Iteration: 5200, Encoder Loss: 21.911248609246318, Decoder Loss: 26.387892670707927, Learning Rate: 0.1
+2018-12-09 02:13:54,521 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:13:54,522 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:13:54,586 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:15:18,395 - lstmimpl - INFO - Epoch: 0, Iteration: 5300, Encoder Loss: 17.291079521976773, Decoder Loss: 21.03524084530381, Learning Rate: 0.1
+2018-12-09 02:15:18,396 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:15:18,397 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:15:18,458 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:16:41,885 - lstmimpl - INFO - Epoch: 0, Iteration: 5400, Encoder Loss: 18.799006454205827, Decoder Loss: 20.66779772518421, Learning Rate: 0.1
+2018-12-09 02:16:41,886 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:16:41,886 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:16:41,938 - lstmimpl - INFO - English: i love this money enxp <eos> 
+
+2018-12-09 02:18:05,379 - lstmimpl - INFO - Epoch: 0, Iteration: 5500, Encoder Loss: 15.822129973867904, Decoder Loss: 16.11280311655188, Learning Rate: 0.1
+2018-12-09 02:18:05,380 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:18:05,381 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:18:05,451 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:19:29,203 - lstmimpl - INFO - Epoch: 0, Iteration: 5600, Encoder Loss: 10.411926195877397, Decoder Loss: 17.618164592975656, Learning Rate: 0.1
+2018-12-09 02:19:29,204 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:19:29,205 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:19:29,258 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:20:52,415 - lstmimpl - INFO - Epoch: 0, Iteration: 5700, Encoder Loss: 16.997456146061413, Decoder Loss: 17.837984750089557, Learning Rate: 0.1
+2018-12-09 02:20:52,416 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:20:52,417 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:20:52,465 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:22:16,146 - lstmimpl - INFO - Epoch: 0, Iteration: 5800, Encoder Loss: 27.1867957724924, Decoder Loss: 21.436421919689085, Learning Rate: 0.1
+2018-12-09 02:22:16,147 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:22:16,148 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:22:16,200 - lstmimpl - INFO - English: i dont like that enxp <eos> 
+
+2018-12-09 02:23:39,991 - lstmimpl - INFO - Epoch: 0, Iteration: 5900, Encoder Loss: 17.86953854798285, Decoder Loss: 19.63007054963783, Learning Rate: 0.1
+2018-12-09 02:23:39,992 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:23:39,992 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:23:40,041 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 02:25:04,587 - lstmimpl - INFO - Epoch: 0, Iteration: 6000, Encoder Loss: 17.856685192885724, Decoder Loss: 19.793693164296762, Learning Rate: 0.1
+2018-12-09 02:25:04,587 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:25:04,588 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:25:04,661 - lstmimpl - INFO - English: i like a car enxp <eos> 
+
+2018-12-09 02:26:27,990 - lstmimpl - INFO - Epoch: 0, Iteration: 6100, Encoder Loss: 25.34198508968312, Decoder Loss: 31.747013645730462, Learning Rate: 0.1
+2018-12-09 02:26:27,991 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:26:27,991 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:26:28,043 - lstmimpl - INFO - English: i dont speak him enxp <eos> 
+
+2018-12-09 02:27:51,668 - lstmimpl - INFO - Epoch: 0, Iteration: 6200, Encoder Loss: 12.833920706121521, Decoder Loss: 10.513255480171523, Learning Rate: 0.1
+2018-12-09 02:27:51,669 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:27:51,669 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:27:51,722 - lstmimpl - INFO - English: i dont like that enxp <eos> 
+
+2018-12-09 02:29:15,380 - lstmimpl - INFO - Epoch: 0, Iteration: 6300, Encoder Loss: 8.523915388580777, Decoder Loss: 17.055473159784043, Learning Rate: 0.1
+2018-12-09 02:29:15,381 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:29:15,381 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:29:15,469 - lstmimpl - INFO - English: i dont know it enxp <eos> 
+
+2018-12-09 02:30:39,049 - lstmimpl - INFO - Epoch: 0, Iteration: 6400, Encoder Loss: 10.557155250023797, Decoder Loss: 11.319627201708265, Learning Rate: 0.1
+2018-12-09 02:30:39,050 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:30:39,050 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:30:39,151 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 02:32:02,865 - lstmimpl - INFO - Epoch: 0, Iteration: 6500, Encoder Loss: 20.784962089674206, Decoder Loss: 18.93457264549606, Learning Rate: 0.1
+2018-12-09 02:32:02,866 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:32:02,867 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:32:02,943 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:33:26,916 - lstmimpl - INFO - Epoch: 0, Iteration: 6600, Encoder Loss: 17.461512825718785, Decoder Loss: 21.153176423339588, Learning Rate: 0.1
+2018-12-09 02:33:26,917 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:33:26,917 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:33:26,989 - lstmimpl - INFO - English: i dont know him enxp <eos> 
+
+2018-12-09 02:34:50,239 - lstmimpl - INFO - Epoch: 0, Iteration: 6700, Encoder Loss: 22.164143718662363, Decoder Loss: 23.124521634163404, Learning Rate: 0.1
+2018-12-09 02:34:50,240 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:34:50,240 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:34:50,293 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 02:36:14,000 - lstmimpl - INFO - Epoch: 0, Iteration: 6800, Encoder Loss: 11.938479581129519, Decoder Loss: 18.185382049292162, Learning Rate: 0.1
+2018-12-09 02:36:14,001 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:36:14,001 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:36:14,086 - lstmimpl - INFO - English: i dont speak him enxp <eos> 
+
+2018-12-09 02:37:37,843 - lstmimpl - INFO - Epoch: 0, Iteration: 6900, Encoder Loss: 30.600117950171448, Decoder Loss: 29.95771273143763, Learning Rate: 0.1
+2018-12-09 02:37:37,844 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:37:37,844 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:37:37,923 - lstmimpl - INFO - English: i dont speak french enxp <eos> 
+
+2018-12-09 02:39:01,489 - lstmimpl - INFO - Epoch: 0, Iteration: 7000, Encoder Loss: 17.835841368010474, Decoder Loss: 15.626488737343493, Learning Rate: 0.1
+2018-12-09 02:39:01,490 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:39:01,490 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:39:01,542 - lstmimpl - INFO - English: i like your car enxp <eos> 
+
+2018-12-09 02:40:29,302 - lstmimpl - INFO - Epoch: 0, Iteration: 7100, Encoder Loss: 12.67915418737026, Decoder Loss: 16.404368798606235, Learning Rate: 0.1
+2018-12-09 02:40:29,303 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:40:29,304 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:40:29,372 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 02:41:57,873 - lstmimpl - INFO - Epoch: 0, Iteration: 7200, Encoder Loss: 14.385810564550832, Decoder Loss: 21.386534301967938, Learning Rate: 0.1
+2018-12-09 02:41:57,874 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:41:57,875 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:41:57,928 - lstmimpl - INFO - English: i have a doctor enxp <eos> 
+
+2018-12-09 02:43:27,285 - lstmimpl - INFO - Epoch: 0, Iteration: 7300, Encoder Loss: 21.342951096488513, Decoder Loss: 16.312584730176535, Learning Rate: 0.1
+2018-12-09 02:43:27,286 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:43:27,286 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:43:27,334 - lstmimpl - INFO - English: i have a doctor enxp <eos> 
+
+2018-12-09 02:44:54,416 - lstmimpl - INFO - Epoch: 0, Iteration: 7400, Encoder Loss: 11.659719887235015, Decoder Loss: 12.354841136819024, Learning Rate: 0.1
+2018-12-09 02:44:54,417 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:44:54,417 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:44:54,467 - lstmimpl - INFO - English: i love this book enxp <eos> 
+
+2018-12-09 02:46:21,926 - lstmimpl - INFO - Epoch: 0, Iteration: 7500, Encoder Loss: 21.69129300665421, Decoder Loss: 23.58590821084735, Learning Rate: 0.1
+2018-12-09 02:46:21,927 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:46:21,927 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:46:21,998 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:47:49,777 - lstmimpl - INFO - Epoch: 0, Iteration: 7600, Encoder Loss: 16.348804137380533, Decoder Loss: 18.65996716651538, Learning Rate: 0.1
+2018-12-09 02:47:49,777 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:47:49,778 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:47:49,879 - lstmimpl - INFO - English: i dont know that enxp <eos> 
+
+2018-12-09 02:49:18,034 - lstmimpl - INFO - Epoch: 0, Iteration: 7700, Encoder Loss: 13.430752249257983, Decoder Loss: 15.959914851755698, Learning Rate: 0.1
+2018-12-09 02:49:18,034 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:49:18,035 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:49:18,159 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 02:50:45,457 - lstmimpl - INFO - Epoch: 0, Iteration: 7800, Encoder Loss: 13.884123659915122, Decoder Loss: 16.83607050966832, Learning Rate: 0.1
+2018-12-09 02:50:45,458 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:50:45,458 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:50:45,512 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:52:12,396 - lstmimpl - INFO - Epoch: 0, Iteration: 7900, Encoder Loss: 13.92714417404948, Decoder Loss: 14.360159359126069, Learning Rate: 0.1
+2018-12-09 02:52:12,397 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:52:12,398 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:52:12,450 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 02:53:39,261 - lstmimpl - INFO - Epoch: 0, Iteration: 8000, Encoder Loss: 9.039023602886815, Decoder Loss: 17.607611315980904, Learning Rate: 0.1
+2018-12-09 02:53:39,262 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:53:39,262 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:53:39,312 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:55:06,437 - lstmimpl - INFO - Epoch: 0, Iteration: 8100, Encoder Loss: 7.613131148590331, Decoder Loss: 19.455936290638668, Learning Rate: 0.1
+2018-12-09 02:55:06,437 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:55:06,438 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:55:06,510 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:56:31,886 - lstmimpl - INFO - Epoch: 0, Iteration: 8200, Encoder Loss: 11.794953272197946, Decoder Loss: 13.389538115914897, Learning Rate: 0.1
+2018-12-09 02:56:31,887 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:56:31,887 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:56:31,964 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:57:57,088 - lstmimpl - INFO - Epoch: 0, Iteration: 8300, Encoder Loss: 22.068318803789083, Decoder Loss: 21.261640602886544, Learning Rate: 0.1
+2018-12-09 02:57:57,089 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:57:57,089 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:57:57,164 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 02:59:22,352 - lstmimpl - INFO - Epoch: 0, Iteration: 8400, Encoder Loss: 20.475543691655794, Decoder Loss: 27.471776620754603, Learning Rate: 0.1
+2018-12-09 02:59:22,353 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 02:59:22,354 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 02:59:22,420 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 03:00:47,867 - lstmimpl - INFO - Epoch: 0, Iteration: 8500, Encoder Loss: 9.26307148478467, Decoder Loss: 10.157620576343193, Learning Rate: 0.1
+2018-12-09 03:00:47,869 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:00:47,869 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:00:47,943 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 03:02:13,500 - lstmimpl - INFO - Epoch: 0, Iteration: 8600, Encoder Loss: 26.43810340421822, Decoder Loss: 16.723600534044415, Learning Rate: 0.1
+2018-12-09 03:02:13,501 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:02:13,502 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:02:13,554 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 03:03:39,615 - lstmimpl - INFO - Epoch: 0, Iteration: 8700, Encoder Loss: 18.647647076793845, Decoder Loss: 22.12431121627087, Learning Rate: 0.1
+2018-12-09 03:03:39,616 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:03:39,616 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:03:39,667 - lstmimpl - INFO - English: i need a book enxp <eos> 
+
+2018-12-09 03:05:04,803 - lstmimpl - INFO - Epoch: 0, Iteration: 8800, Encoder Loss: 18.48896460919836, Decoder Loss: 15.921643252326081, Learning Rate: 0.1
+2018-12-09 03:05:04,804 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:05:04,804 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:05:04,856 - lstmimpl - INFO - English: i need a book enxp <eos> 
+
+2018-12-09 03:06:30,384 - lstmimpl - INFO - Epoch: 0, Iteration: 8900, Encoder Loss: 10.616994141954443, Decoder Loss: 13.263947119893812, Learning Rate: 0.1
+2018-12-09 03:06:30,385 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:06:30,386 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:06:30,457 - lstmimpl - INFO - English: i need a book enxp <eos> 
+
+2018-12-09 03:07:55,988 - lstmimpl - INFO - Epoch: 0, Iteration: 9000, Encoder Loss: 28.49995713756101, Decoder Loss: 27.595082665214342, Learning Rate: 0.1
+2018-12-09 03:07:55,988 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:07:55,989 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:07:56,127 - lstmimpl - INFO - English: i need a book enxp <eos> 
+
+2018-12-09 03:09:21,719 - lstmimpl - INFO - Epoch: 0, Iteration: 9100, Encoder Loss: 19.799302444425738, Decoder Loss: 21.3711895549221, Learning Rate: 0.1
+2018-12-09 03:09:21,720 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:09:21,720 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:09:21,791 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 03:10:46,935 - lstmimpl - INFO - Epoch: 0, Iteration: 9200, Encoder Loss: 18.621669768286804, Decoder Loss: 20.661218558868235, Learning Rate: 0.1
+2018-12-09 03:10:46,936 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:10:46,936 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:10:47,022 - lstmimpl - INFO - English: i dont know you enxp <eos> 
+
+2018-12-09 03:12:11,409 - lstmimpl - INFO - Epoch: 0, Iteration: 9300, Encoder Loss: 27.601371347843205, Decoder Loss: 30.880081612522613, Learning Rate: 0.1
+2018-12-09 03:12:11,410 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:12:11,410 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:12:11,486 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:13:35,605 - lstmimpl - INFO - Epoch: 0, Iteration: 9400, Encoder Loss: 8.558784691160776, Decoder Loss: 12.764497714637887, Learning Rate: 0.1
+2018-12-09 03:13:35,606 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:13:35,606 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:13:35,682 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 03:14:59,666 - lstmimpl - INFO - Epoch: 0, Iteration: 9500, Encoder Loss: 15.751231005816742, Decoder Loss: 18.331767961158302, Learning Rate: 0.1
+2018-12-09 03:14:59,667 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:14:59,667 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:14:59,719 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 03:16:23,504 - lstmimpl - INFO - Epoch: 0, Iteration: 9600, Encoder Loss: 26.012318723757748, Decoder Loss: 23.37747151151173, Learning Rate: 0.1
+2018-12-09 03:16:23,505 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:16:23,505 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:16:23,635 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 03:17:47,784 - lstmimpl - INFO - Epoch: 0, Iteration: 9700, Encoder Loss: 11.84809492343124, Decoder Loss: 13.291513420743147, Learning Rate: 0.1
+2018-12-09 03:17:47,785 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:17:47,785 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:17:47,871 - lstmimpl - INFO - English: i have a dog enxp <eos> 
+
+2018-12-09 03:19:12,228 - lstmimpl - INFO - Epoch: 0, Iteration: 9800, Encoder Loss: 17.121905864922727, Decoder Loss: 18.52591075327748, Learning Rate: 0.1
+2018-12-09 03:19:12,229 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:19:12,230 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:19:12,344 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 03:20:36,304 - lstmimpl - INFO - Epoch: 0, Iteration: 9900, Encoder Loss: 26.291187255579057, Decoder Loss: 39.48073802198309, Learning Rate: 0.1
+2018-12-09 03:20:36,305 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:20:36,305 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:20:36,376 - lstmimpl - INFO - English: i dont like now enxp <eos> 
+
+2018-12-09 03:22:00,604 - lstmimpl - INFO - Epoch: 0, Iteration: 10000, Encoder Loss: 20.702833305565857, Decoder Loss: 24.70655532331513, Learning Rate: 0.1
+2018-12-09 03:22:00,604 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:22:00,605 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:22:00,708 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 03:23:24,505 - lstmimpl - INFO - Epoch: 0, Iteration: 10100, Encoder Loss: 26.61517490222941, Decoder Loss: 25.291318042476167, Learning Rate: 0.1
+2018-12-09 03:23:24,506 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:23:24,507 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:23:24,559 - lstmimpl - INFO - English: i dont like you enxp <eos> 
+
+2018-12-09 03:24:49,453 - lstmimpl - INFO - Epoch: 0, Iteration: 10200, Encoder Loss: 29.82173084735415, Decoder Loss: 30.007649322875967, Learning Rate: 0.1
+2018-12-09 03:24:49,454 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:24:49,454 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:24:49,503 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 03:26:13,767 - lstmimpl - INFO - Epoch: 0, Iteration: 10300, Encoder Loss: 30.0403556820493, Decoder Loss: 26.852887031943112, Learning Rate: 0.1
+2018-12-09 03:26:13,768 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:26:13,769 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:26:13,837 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 03:27:38,286 - lstmimpl - INFO - Epoch: 0, Iteration: 10400, Encoder Loss: 15.267410268630105, Decoder Loss: 15.126222840834748, Learning Rate: 0.1
+2018-12-09 03:27:38,287 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:27:38,287 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:27:38,335 - lstmimpl - INFO - English: i dont like it enxp <eos> 
+
+2018-12-09 03:29:02,210 - lstmimpl - INFO - Epoch: 0, Iteration: 10500, Encoder Loss: 16.945930463668454, Decoder Loss: 20.002817308947268, Learning Rate: 0.1
+2018-12-09 03:29:02,210 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:29:02,211 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:29:02,261 - lstmimpl - INFO - English: i like a book enxp <eos> 
+
+2018-12-09 03:30:26,290 - lstmimpl - INFO - Epoch: 0, Iteration: 10600, Encoder Loss: 25.713410996435634, Decoder Loss: 27.864558810915437, Learning Rate: 0.1
+2018-12-09 03:30:26,291 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:30:26,291 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:30:26,340 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:31:50,469 - lstmimpl - INFO - Epoch: 0, Iteration: 10700, Encoder Loss: 17.68973566483045, Decoder Loss: 19.41011219772507, Learning Rate: 0.1
+2018-12-09 03:31:50,469 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:31:50,470 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:31:50,520 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:33:14,608 - lstmimpl - INFO - Epoch: 0, Iteration: 10800, Encoder Loss: 23.774384330462485, Decoder Loss: 25.2815690474525, Learning Rate: 0.1
+2018-12-09 03:33:14,608 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:33:14,609 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:33:14,657 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:34:38,721 - lstmimpl - INFO - Epoch: 0, Iteration: 10900, Encoder Loss: 23.639021856861955, Decoder Loss: 32.32033100881175, Learning Rate: 0.1
+2018-12-09 03:34:38,721 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:34:38,722 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:34:38,774 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:36:03,427 - lstmimpl - INFO - Epoch: 0, Iteration: 11000, Encoder Loss: 9.215450904698043, Decoder Loss: 11.229809479225485, Learning Rate: 0.1
+2018-12-09 03:36:03,428 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:36:03,428 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:36:03,476 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:37:27,793 - lstmimpl - INFO - Epoch: 0, Iteration: 11100, Encoder Loss: 9.337217758418111, Decoder Loss: 14.161885547069948, Learning Rate: 0.1
+2018-12-09 03:37:27,793 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:37:27,794 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:37:27,845 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:38:51,990 - lstmimpl - INFO - Epoch: 0, Iteration: 11200, Encoder Loss: 15.42495937611884, Decoder Loss: 11.419094619144296, Learning Rate: 0.1
+2018-12-09 03:38:51,991 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:38:51,991 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:38:52,045 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:40:17,456 - lstmimpl - INFO - Epoch: 0, Iteration: 11300, Encoder Loss: 14.361350879703036, Decoder Loss: 29.52300692383171, Learning Rate: 0.1
+2018-12-09 03:40:17,457 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:40:17,457 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:40:17,509 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:41:41,904 - lstmimpl - INFO - Epoch: 0, Iteration: 11400, Encoder Loss: 24.588093198181742, Decoder Loss: 25.088502590344653, Learning Rate: 0.1
+2018-12-09 03:41:41,905 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:41:41,905 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:41:41,969 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:43:06,432 - lstmimpl - INFO - Epoch: 0, Iteration: 11500, Encoder Loss: 11.711822519546251, Decoder Loss: 14.933192010485923, Learning Rate: 0.1
+2018-12-09 03:43:06,433 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:43:06,434 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:43:06,482 - lstmimpl - INFO - English: i love the car enxp <eos> 
+
+2018-12-09 03:44:30,797 - lstmimpl - INFO - Epoch: 0, Iteration: 11600, Encoder Loss: 28.503475847996985, Decoder Loss: 30.36303720799908, Learning Rate: 0.1
+2018-12-09 03:44:30,798 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:44:30,799 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:44:30,861 - lstmimpl - INFO - English: i love a book enxp <eos> 
+
+2018-12-09 03:45:55,298 - lstmimpl - INFO - Epoch: 0, Iteration: 11700, Encoder Loss: 15.314653474960718, Decoder Loss: 13.786460374516306, Learning Rate: 0.1
+2018-12-09 03:45:55,299 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:45:55,299 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:45:55,383 - lstmimpl - INFO - English: i have a cat enxp <eos> 
+
+2018-12-09 03:47:19,768 - lstmimpl - INFO - Epoch: 0, Iteration: 11800, Encoder Loss: 14.261395938018067, Decoder Loss: 14.440379590574464, Learning Rate: 0.1
+2018-12-09 03:47:19,768 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:47:19,769 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:47:19,821 - lstmimpl - INFO - English: i love a car enxp <eos> 
+
+2018-12-09 03:48:43,586 - lstmimpl - INFO - Epoch: 0, Iteration: 11900, Encoder Loss: 11.430773964112484, Decoder Loss: 12.513506354151192, Learning Rate: 0.1
+2018-12-09 03:48:43,586 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:48:43,587 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:48:43,660 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 03:50:06,180 - lstmimpl - INFO - Models saved successfully!
+2018-12-09 03:50:08,785 - lstmimpl - INFO - Epoch: 1, Iteration: 12000, Encoder Loss: 11.047146775910834, Decoder Loss: 13.688477371914443, Learning Rate: 0.1
+2018-12-09 03:50:08,786 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:50:08,786 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:50:08,857 - lstmimpl - INFO - English: i have a song enxp <eos> 
+
+2018-12-09 03:51:31,549 - lstmimpl - INFO - Epoch: 1, Iteration: 12100, Encoder Loss: 14.658299649076772, Decoder Loss: 12.208823512739237, Learning Rate: 0.1
+2018-12-09 03:51:31,550 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:51:31,550 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:51:31,650 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:52:53,856 - lstmimpl - INFO - Epoch: 1, Iteration: 12200, Encoder Loss: 15.930463040118655, Decoder Loss: 20.872533981220897, Learning Rate: 0.1
+2018-12-09 03:52:53,857 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:52:53,857 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:52:53,919 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 03:54:16,511 - lstmimpl - INFO - Epoch: 1, Iteration: 12300, Encoder Loss: 16.65320632708896, Decoder Loss: 18.800747987242637, Learning Rate: 0.1
+2018-12-09 03:54:16,512 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:54:16,512 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:54:16,564 - lstmimpl - INFO - English: tom is my keys enxp <eos> 
+
+2018-12-09 03:55:43,307 - lstmimpl - INFO - Epoch: 1, Iteration: 12400, Encoder Loss: 19.457428466265036, Decoder Loss: 20.97320697040268, Learning Rate: 0.1
+2018-12-09 03:55:43,308 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:55:43,308 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:55:43,357 - lstmimpl - INFO - English: i need a song enxp <eos> 
+
+2018-12-09 03:57:09,493 - lstmimpl - INFO - Epoch: 1, Iteration: 12500, Encoder Loss: 14.42003825630526, Decoder Loss: 15.662028486384077, Learning Rate: 0.1
+2018-12-09 03:57:09,494 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:57:09,494 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:57:09,549 - lstmimpl - INFO - English: i have a woman enxp <eos> 
+
+2018-12-09 03:58:35,415 - lstmimpl - INFO - Epoch: 1, Iteration: 12600, Encoder Loss: 8.39194868458001, Decoder Loss: 7.736202846044493, Learning Rate: 0.1
+2018-12-09 03:58:35,416 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:58:35,416 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:58:35,466 - lstmimpl - INFO - English: i have a job enxp <eos> 
+
+2018-12-09 03:59:59,618 - lstmimpl - INFO - Epoch: 1, Iteration: 12700, Encoder Loss: 16.968776008376445, Decoder Loss: 12.78518286665715, Learning Rate: 0.1
+2018-12-09 03:59:59,619 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 03:59:59,619 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 03:59:59,694 - lstmimpl - INFO - English: i have a job enxp <eos> 
+
+2018-12-09 04:01:23,270 - lstmimpl - INFO - Epoch: 1, Iteration: 12800, Encoder Loss: 14.970922172808125, Decoder Loss: 12.443752137937725, Learning Rate: 0.1
+2018-12-09 04:01:23,271 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:01:23,272 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:01:23,342 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 04:02:46,521 - lstmimpl - INFO - Epoch: 1, Iteration: 12900, Encoder Loss: 18.106802024431524, Decoder Loss: 15.927443117714631, Learning Rate: 0.1
+2018-12-09 04:02:46,522 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:02:46,523 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:02:46,573 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 04:04:10,435 - lstmimpl - INFO - Epoch: 1, Iteration: 13000, Encoder Loss: 10.411670724117409, Decoder Loss: 15.43832635044697, Learning Rate: 0.1
+2018-12-09 04:04:10,436 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:04:10,436 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:04:10,488 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 04:05:34,114 - lstmimpl - INFO - Epoch: 1, Iteration: 13100, Encoder Loss: 19.93337981255434, Decoder Loss: 24.058475468880985, Learning Rate: 0.1
+2018-12-09 04:05:34,115 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:05:34,116 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:05:34,169 - lstmimpl - INFO - English: i love the dog enxp <eos> 
+
+2018-12-09 04:06:57,657 - lstmimpl - INFO - Epoch: 1, Iteration: 13200, Encoder Loss: 20.893587367695496, Decoder Loss: 21.77378596090433, Learning Rate: 0.1
+2018-12-09 04:06:57,658 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:06:57,659 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:06:57,735 - lstmimpl - INFO - English: i have a dog enxp <eos> 
+
+2018-12-09 04:08:21,111 - lstmimpl - INFO - Epoch: 1, Iteration: 13300, Encoder Loss: 11.367955415476183, Decoder Loss: 12.659708527299726, Learning Rate: 0.1
+2018-12-09 04:08:21,112 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:08:21,113 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:08:21,182 - lstmimpl - INFO - English: i love the door enxp <eos> 
+
+2018-12-09 04:09:45,723 - lstmimpl - INFO - Epoch: 1, Iteration: 13400, Encoder Loss: 10.201151595576084, Decoder Loss: 11.256474632671422, Learning Rate: 0.1
+2018-12-09 04:09:45,724 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:09:45,724 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:09:45,774 - lstmimpl - INFO - English: tom is a key enxp <eos> 
+
+2018-12-09 04:11:09,416 - lstmimpl - INFO - Epoch: 1, Iteration: 13500, Encoder Loss: 16.684980004997158, Decoder Loss: 17.248084608719193, Learning Rate: 0.1
+2018-12-09 04:11:09,417 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:11:09,417 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:11:09,469 - lstmimpl - INFO - English: tom is a bibliophile enxp <eos> 
+
+2018-12-09 04:12:32,904 - lstmimpl - INFO - Epoch: 1, Iteration: 13600, Encoder Loss: 24.710063137078322, Decoder Loss: 14.750097066114174, Learning Rate: 0.1
+2018-12-09 04:12:32,906 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:12:32,906 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:12:32,958 - lstmimpl - INFO - English: tom has a car enxp <eos> 
+
+2018-12-09 04:13:56,735 - lstmimpl - INFO - Epoch: 1, Iteration: 13700, Encoder Loss: 18.255890433091267, Decoder Loss: 20.293238843949858, Learning Rate: 0.1
+2018-12-09 04:13:56,736 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:13:56,736 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:13:56,812 - lstmimpl - INFO - English: i have two friends enxp <eos> 
+
+2018-12-09 04:15:21,657 - lstmimpl - INFO - Epoch: 1, Iteration: 13800, Encoder Loss: 10.838585179069586, Decoder Loss: 14.01259412533406, Learning Rate: 0.1
+2018-12-09 04:15:21,658 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:15:21,658 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:15:21,712 - lstmimpl - INFO - English: he is a bibliophile enxp <eos> 
+
+2018-12-09 04:16:46,893 - lstmimpl - INFO - Epoch: 1, Iteration: 13900, Encoder Loss: 15.856495591835994, Decoder Loss: 19.600342246937384, Learning Rate: 0.1
+2018-12-09 04:16:46,894 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:16:46,894 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:16:46,946 - lstmimpl - INFO - English: i have a letter enxp <eos> 
+
+2018-12-09 04:18:12,303 - lstmimpl - INFO - Epoch: 1, Iteration: 14000, Encoder Loss: 14.161106983194172, Decoder Loss: 18.737419902310243, Learning Rate: 0.1
+2018-12-09 04:18:12,304 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:18:12,305 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:18:12,390 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 04:19:35,972 - lstmimpl - INFO - Epoch: 1, Iteration: 14100, Encoder Loss: 10.535315935719444, Decoder Loss: 17.43451042042498, Learning Rate: 0.1
+2018-12-09 04:19:35,973 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:19:35,974 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:19:36,026 - lstmimpl - INFO - English: i have a friends enxp <eos> 
+
+2018-12-09 04:20:58,831 - lstmimpl - INFO - Epoch: 1, Iteration: 14200, Encoder Loss: 11.563878772661555, Decoder Loss: 10.289619816417176, Learning Rate: 0.1
+2018-12-09 04:20:58,831 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:20:58,832 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:20:58,884 - lstmimpl - INFO - English: i have a hero enxp <eos> 
+
+2018-12-09 04:22:21,783 - lstmimpl - INFO - Epoch: 1, Iteration: 14300, Encoder Loss: 17.017651871465816, Decoder Loss: 13.214813392499277, Learning Rate: 0.1
+2018-12-09 04:22:21,784 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:22:21,784 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:22:21,838 - lstmimpl - INFO - English: i have a friends enxp <eos> 
+
+2018-12-09 04:23:44,820 - lstmimpl - INFO - Epoch: 1, Iteration: 14400, Encoder Loss: 13.5479519586854, Decoder Loss: 24.50344162971352, Learning Rate: 0.1
+2018-12-09 04:23:44,821 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:23:44,822 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:23:44,892 - lstmimpl - INFO - English: i am a hero enxp <eos> 
+
+2018-12-09 04:25:08,841 - lstmimpl - INFO - Epoch: 1, Iteration: 14500, Encoder Loss: 22.392226991722115, Decoder Loss: 25.27039061482432, Learning Rate: 0.1
+2018-12-09 04:25:08,842 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:25:08,843 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:25:08,903 - lstmimpl - INFO - English: i like your house enxp <eos> 
+
+2018-12-09 04:26:31,603 - lstmimpl - INFO - Epoch: 1, Iteration: 14600, Encoder Loss: 12.267764790017337, Decoder Loss: 19.643446812801102, Learning Rate: 0.1
+2018-12-09 04:26:31,604 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:26:31,604 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:26:31,659 - lstmimpl - INFO - English: tom is a beer enxp <eos> 
+
+2018-12-09 04:27:54,396 - lstmimpl - INFO - Epoch: 1, Iteration: 14700, Encoder Loss: 17.493384612207016, Decoder Loss: 15.362790732603138, Learning Rate: 0.1
+2018-12-09 04:27:54,397 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:27:54,398 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:27:54,450 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 04:29:18,204 - lstmimpl - INFO - Epoch: 1, Iteration: 14800, Encoder Loss: 10.008909010483817, Decoder Loss: 25.173556584353122, Learning Rate: 0.1
+2018-12-09 04:29:18,205 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:29:18,205 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:29:18,259 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 04:30:41,100 - lstmimpl - INFO - Epoch: 1, Iteration: 14900, Encoder Loss: 21.363184716383042, Decoder Loss: 22.35133940448057, Learning Rate: 0.1
+2018-12-09 04:30:41,101 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:30:41,102 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:30:41,173 - lstmimpl - INFO - English: i dont like surprises enxp <eos> 
+
+2018-12-09 04:32:04,129 - lstmimpl - INFO - Epoch: 1, Iteration: 15000, Encoder Loss: 9.98161503791616, Decoder Loss: 10.122945808385078, Learning Rate: 0.1
+2018-12-09 04:32:04,130 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:32:04,131 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:32:04,191 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 04:33:27,366 - lstmimpl - INFO - Epoch: 1, Iteration: 15100, Encoder Loss: 10.690340838585792, Decoder Loss: 16.48082801184176, Learning Rate: 0.1
+2018-12-09 04:33:27,366 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:33:27,367 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:33:27,427 - lstmimpl - INFO - English: i dont like scared enxp <eos> 
+
+2018-12-09 04:34:50,327 - lstmimpl - INFO - Epoch: 1, Iteration: 15200, Encoder Loss: 9.860958011859845, Decoder Loss: 14.706454100444969, Learning Rate: 0.1
+2018-12-09 04:34:50,327 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:34:50,328 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:34:50,388 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 04:36:13,722 - lstmimpl - INFO - Epoch: 1, Iteration: 15300, Encoder Loss: 17.206751905356782, Decoder Loss: 19.60826559461751, Learning Rate: 0.1
+2018-12-09 04:36:13,723 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:36:13,723 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:36:13,773 - lstmimpl - INFO - English: i have a psychic enxp <eos> 
+
+2018-12-09 04:37:36,717 - lstmimpl - INFO - Epoch: 1, Iteration: 15400, Encoder Loss: 10.610380667316905, Decoder Loss: 15.578347845004982, Learning Rate: 0.1
+2018-12-09 04:37:36,718 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:37:36,719 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:37:36,790 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 04:38:59,967 - lstmimpl - INFO - Epoch: 1, Iteration: 15500, Encoder Loss: 14.61491254071268, Decoder Loss: 15.82913954139499, Learning Rate: 0.1
+2018-12-09 04:38:59,970 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:38:59,971 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:39:00,086 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 04:40:23,813 - lstmimpl - INFO - Epoch: 1, Iteration: 15600, Encoder Loss: 11.938262809325225, Decoder Loss: 9.696221091038385, Learning Rate: 0.1
+2018-12-09 04:40:23,814 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:40:23,814 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:40:23,864 - lstmimpl - INFO - English: i dont like him enxp <eos> 
+
+2018-12-09 04:41:47,272 - lstmimpl - INFO - Epoch: 1, Iteration: 15700, Encoder Loss: 15.681213913453698, Decoder Loss: 13.372727225689381, Learning Rate: 0.1
+2018-12-09 04:41:47,272 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:41:47,273 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:41:47,353 - lstmimpl - INFO - English: i dont like wine enxp <eos> 
+
+2018-12-09 04:43:10,483 - lstmimpl - INFO - Epoch: 1, Iteration: 15800, Encoder Loss: 8.428520007582321, Decoder Loss: 8.627345580061679, Learning Rate: 0.1
+2018-12-09 04:43:10,483 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:43:10,484 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:43:10,561 - lstmimpl - INFO - English: i have two cats enxp <eos> 
+
+2018-12-09 04:44:33,580 - lstmimpl - INFO - Epoch: 1, Iteration: 15900, Encoder Loss: 4.940001889130864, Decoder Loss: 8.549704658508862, Learning Rate: 0.1
+2018-12-09 04:44:33,580 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:44:33,581 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:44:33,688 - lstmimpl - INFO - English: i dont like traveling enxp <eos> 
+
+2018-12-09 04:45:56,602 - lstmimpl - INFO - Epoch: 1, Iteration: 16000, Encoder Loss: 14.388347530325095, Decoder Loss: 14.03975913411214, Learning Rate: 0.1
+2018-12-09 04:45:56,603 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:45:56,603 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:45:56,674 - lstmimpl - INFO - English: i love my son enxp <eos> 
+
+2018-12-09 04:47:19,386 - lstmimpl - INFO - Epoch: 1, Iteration: 16100, Encoder Loss: 13.103361778102828, Decoder Loss: 11.683923444683062, Learning Rate: 0.1
+2018-12-09 04:47:19,387 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:47:19,388 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:47:19,439 - lstmimpl - INFO - English: i love my son enxp <eos> 
+
+2018-12-09 04:48:42,422 - lstmimpl - INFO - Epoch: 1, Iteration: 16200, Encoder Loss: 14.808782135019651, Decoder Loss: 18.00058772765608, Learning Rate: 0.1
+2018-12-09 04:48:42,423 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:48:42,423 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:48:42,493 - lstmimpl - INFO - English: i love my son enxp <eos> 
+
+2018-12-09 04:50:05,967 - lstmimpl - INFO - Epoch: 1, Iteration: 16300, Encoder Loss: 14.382985959079042, Decoder Loss: 13.070643973120692, Learning Rate: 0.1
+2018-12-09 04:50:05,968 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:50:05,969 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:50:06,019 - lstmimpl - INFO - English: i love my son enxp <eos> 
+
+2018-12-09 04:51:29,023 - lstmimpl - INFO - Epoch: 1, Iteration: 16400, Encoder Loss: 8.365314019048016, Decoder Loss: 10.738466416511688, Learning Rate: 0.1
+2018-12-09 04:51:29,024 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:51:29,025 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:51:29,097 - lstmimpl - INFO - English: i dont like anything enxp <eos> 
+
+2018-12-09 04:52:51,878 - lstmimpl - INFO - Epoch: 1, Iteration: 16500, Encoder Loss: 17.93856147700806, Decoder Loss: 18.775645574412838, Learning Rate: 0.1
+2018-12-09 04:52:51,879 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:52:51,880 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:52:51,932 - lstmimpl - INFO - English: i have a son enxp <eos> 
+
+2018-12-09 04:54:15,030 - lstmimpl - INFO - Epoch: 1, Iteration: 16600, Encoder Loss: 7.548730773138617, Decoder Loss: 6.835739733916021, Learning Rate: 0.1
+2018-12-09 04:54:15,031 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:54:15,031 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:54:15,081 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 04:55:39,534 - lstmimpl - INFO - Epoch: 1, Iteration: 16700, Encoder Loss: 17.03648316814041, Decoder Loss: 27.63769816913478, Learning Rate: 0.1
+2018-12-09 04:55:39,535 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:55:39,535 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:55:39,611 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 04:57:02,633 - lstmimpl - INFO - Epoch: 1, Iteration: 16800, Encoder Loss: 13.28234164325694, Decoder Loss: 12.591511202465275, Learning Rate: 0.1
+2018-12-09 04:57:02,634 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:57:02,635 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:57:02,729 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 04:58:25,664 - lstmimpl - INFO - Epoch: 1, Iteration: 16900, Encoder Loss: 22.750898537363188, Decoder Loss: 29.14904447488613, Learning Rate: 0.1
+2018-12-09 04:58:25,666 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:58:25,666 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:58:25,817 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 04:59:50,026 - lstmimpl - INFO - Epoch: 1, Iteration: 17000, Encoder Loss: 10.179460666084237, Decoder Loss: 13.698906910156628, Learning Rate: 0.1
+2018-12-09 04:59:50,027 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 04:59:50,028 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 04:59:50,079 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 05:01:13,411 - lstmimpl - INFO - Epoch: 1, Iteration: 17100, Encoder Loss: 23.908178324844876, Decoder Loss: 26.82132414769709, Learning Rate: 0.1
+2018-12-09 05:01:13,412 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:01:13,412 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:01:13,464 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 05:02:36,483 - lstmimpl - INFO - Epoch: 1, Iteration: 17200, Encoder Loss: 22.460086255305917, Decoder Loss: 21.519453850134237, Learning Rate: 0.1
+2018-12-09 05:02:36,484 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:02:36,484 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:02:36,534 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 05:03:59,440 - lstmimpl - INFO - Epoch: 1, Iteration: 17300, Encoder Loss: 15.07209114574668, Decoder Loss: 17.02072506973565, Learning Rate: 0.1
+2018-12-09 05:03:59,441 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:03:59,442 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:03:59,493 - lstmimpl - INFO - English: i dont like spanish enxp <eos> 
+
+2018-12-09 05:05:22,726 - lstmimpl - INFO - Epoch: 1, Iteration: 17400, Encoder Loss: 17.890441535306604, Decoder Loss: 16.68177339469748, Learning Rate: 0.1
+2018-12-09 05:05:22,727 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:05:22,728 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:05:22,779 - lstmimpl - INFO - English: i have a psychic enxp <eos> 
+
+2018-12-09 05:06:45,857 - lstmimpl - INFO - Epoch: 1, Iteration: 17500, Encoder Loss: 12.52496846042917, Decoder Loss: 10.71589334653481, Learning Rate: 0.1
+2018-12-09 05:06:45,858 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:06:45,859 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:06:45,911 - lstmimpl - INFO - English: i have a lorry enxp <eos> 
+
+2018-12-09 05:08:09,097 - lstmimpl - INFO - Epoch: 1, Iteration: 17600, Encoder Loss: 9.424448516242478, Decoder Loss: 9.23854960155528, Learning Rate: 0.1
+2018-12-09 05:08:09,098 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:08:09,098 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:08:09,186 - lstmimpl - INFO - English: i dont like this enxp <eos> 
+
+2018-12-09 05:09:33,126 - lstmimpl - INFO - Epoch: 1, Iteration: 17700, Encoder Loss: 8.478804789178529, Decoder Loss: 13.512988472728177, Learning Rate: 0.1
+2018-12-09 05:09:33,126 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:09:33,127 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:09:33,187 - lstmimpl - INFO - English: i have a lorry enxp <eos> 
+
+2018-12-09 05:10:56,465 - lstmimpl - INFO - Epoch: 1, Iteration: 17800, Encoder Loss: 16.766039829714227, Decoder Loss: 18.292526229838014, Learning Rate: 0.1
+2018-12-09 05:10:56,466 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:10:56,467 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:10:56,519 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:12:19,859 - lstmimpl - INFO - Epoch: 1, Iteration: 17900, Encoder Loss: 12.056903498093535, Decoder Loss: 18.37380682329464, Learning Rate: 0.1
+2018-12-09 05:12:19,860 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:12:19,861 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:12:19,926 - lstmimpl - INFO - English: i have no books enxp <eos> 
+
+2018-12-09 05:13:43,254 - lstmimpl - INFO - Epoch: 1, Iteration: 18000, Encoder Loss: 9.536734114233687, Decoder Loss: 11.836887179380206, Learning Rate: 0.1
+2018-12-09 05:13:43,254 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:13:43,255 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:13:43,307 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 05:15:06,855 - lstmimpl - INFO - Epoch: 1, Iteration: 18100, Encoder Loss: 12.372647932406384, Decoder Loss: 8.737399109412822, Learning Rate: 0.1
+2018-12-09 05:15:06,855 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:15:06,856 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:15:06,904 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:16:30,117 - lstmimpl - INFO - Epoch: 1, Iteration: 18200, Encoder Loss: 12.511519851733441, Decoder Loss: 14.563892345819491, Learning Rate: 0.1
+2018-12-09 05:16:30,118 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:16:30,118 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:16:30,180 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 05:17:53,487 - lstmimpl - INFO - Epoch: 1, Iteration: 18300, Encoder Loss: 21.84776856148047, Decoder Loss: 27.683357410575795, Learning Rate: 0.1
+2018-12-09 05:17:53,487 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:17:53,488 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:17:53,556 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 05:19:17,047 - lstmimpl - INFO - Epoch: 1, Iteration: 18400, Encoder Loss: 10.983472085106014, Decoder Loss: 12.723723932088081, Learning Rate: 0.1
+2018-12-09 05:19:17,048 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:19:17,049 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:19:17,123 - lstmimpl - INFO - English: i have a idea enxp <eos> 
+
+2018-12-09 05:20:40,002 - lstmimpl - INFO - Epoch: 1, Iteration: 18500, Encoder Loss: 15.432223904512282, Decoder Loss: 17.300141574921184, Learning Rate: 0.1
+2018-12-09 05:20:40,003 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:20:40,004 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:20:40,060 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 05:22:03,447 - lstmimpl - INFO - Epoch: 1, Iteration: 18600, Encoder Loss: 10.594636272083179, Decoder Loss: 13.689564336105027, Learning Rate: 0.1
+2018-12-09 05:22:03,448 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:22:03,448 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:22:03,523 - lstmimpl - INFO - English: i have a cameras enxp <eos> 
+
+2018-12-09 05:23:27,473 - lstmimpl - INFO - Epoch: 1, Iteration: 18700, Encoder Loss: 18.993743682925125, Decoder Loss: 18.909439454819303, Learning Rate: 0.1
+2018-12-09 05:23:27,474 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:23:27,474 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:23:27,546 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 05:24:51,537 - lstmimpl - INFO - Epoch: 1, Iteration: 18800, Encoder Loss: 13.166852777977937, Decoder Loss: 25.833388774638067, Learning Rate: 0.1
+2018-12-09 05:24:51,538 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:24:51,539 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:24:51,635 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:26:15,314 - lstmimpl - INFO - Epoch: 1, Iteration: 18900, Encoder Loss: 18.218023283082008, Decoder Loss: 18.16884607271276, Learning Rate: 0.1
+2018-12-09 05:26:15,314 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:26:15,315 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:26:15,372 - lstmimpl - INFO - English: i like your car enxp <eos> 
+
+2018-12-09 05:27:38,489 - lstmimpl - INFO - Epoch: 1, Iteration: 19000, Encoder Loss: 12.13104398945253, Decoder Loss: 15.78624186347814, Learning Rate: 0.1
+2018-12-09 05:27:38,490 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:27:38,491 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:27:38,558 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:29:02,015 - lstmimpl - INFO - Epoch: 1, Iteration: 19100, Encoder Loss: 18.807666980530847, Decoder Loss: 32.441777514600524, Learning Rate: 0.1
+2018-12-09 05:29:02,016 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:29:02,017 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:29:02,067 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:30:25,291 - lstmimpl - INFO - Epoch: 1, Iteration: 19200, Encoder Loss: 6.424645164435888, Decoder Loss: 9.425075567521793, Learning Rate: 0.1
+2018-12-09 05:30:25,291 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:30:25,292 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:30:25,344 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:31:48,704 - lstmimpl - INFO - Epoch: 1, Iteration: 19300, Encoder Loss: 19.03526773708861, Decoder Loss: 20.096271201332744, Learning Rate: 0.1
+2018-12-09 05:31:48,705 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:31:48,705 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:31:48,757 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:33:12,105 - lstmimpl - INFO - Epoch: 1, Iteration: 19400, Encoder Loss: 12.128792930293587, Decoder Loss: 17.71227866148034, Learning Rate: 0.1
+2018-12-09 05:33:12,105 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:33:12,106 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:33:12,185 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 05:34:35,697 - lstmimpl - INFO - Epoch: 1, Iteration: 19500, Encoder Loss: 11.532411785704777, Decoder Loss: 12.94889813816532, Learning Rate: 0.1
+2018-12-09 05:34:35,698 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:34:35,698 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:34:35,767 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:35:59,440 - lstmimpl - INFO - Epoch: 1, Iteration: 19600, Encoder Loss: 8.95837272438324, Decoder Loss: 11.331020020897396, Learning Rate: 0.1
+2018-12-09 05:35:59,441 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:35:59,441 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:35:59,511 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 05:37:23,308 - lstmimpl - INFO - Epoch: 1, Iteration: 19700, Encoder Loss: 18.92118051118052, Decoder Loss: 30.15690108280765, Learning Rate: 0.1
+2018-12-09 05:37:23,309 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:37:23,310 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:37:23,389 - lstmimpl - INFO - English: i love your father enxp <eos> 
+
+2018-12-09 05:38:46,933 - lstmimpl - INFO - Epoch: 1, Iteration: 19800, Encoder Loss: 14.5374582461925, Decoder Loss: 19.9909989180838, Learning Rate: 0.1
+2018-12-09 05:38:46,934 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:38:46,935 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:38:46,987 - lstmimpl - INFO - English: i love this book enxp <eos> 
+
+2018-12-09 05:40:11,926 - lstmimpl - INFO - Epoch: 1, Iteration: 19900, Encoder Loss: 13.232344505306703, Decoder Loss: 16.23575942848883, Learning Rate: 0.1
+2018-12-09 05:40:11,927 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:40:11,927 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:40:11,996 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 05:41:35,833 - lstmimpl - INFO - Epoch: 1, Iteration: 20000, Encoder Loss: 16.413155828940933, Decoder Loss: 12.310925560711725, Learning Rate: 0.1
+2018-12-09 05:41:35,833 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:41:35,834 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:41:35,886 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 05:42:59,392 - lstmimpl - INFO - Epoch: 1, Iteration: 20100, Encoder Loss: 15.040407742179827, Decoder Loss: 21.365720705619726, Learning Rate: 0.1
+2018-12-09 05:42:59,392 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:42:59,393 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:42:59,452 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:44:23,122 - lstmimpl - INFO - Epoch: 1, Iteration: 20200, Encoder Loss: 11.56226341957937, Decoder Loss: 12.150728101606694, Learning Rate: 0.1
+2018-12-09 05:44:23,123 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:44:23,124 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:44:23,202 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:45:47,012 - lstmimpl - INFO - Epoch: 1, Iteration: 20300, Encoder Loss: 12.754510170680224, Decoder Loss: 16.99272312160869, Learning Rate: 0.1
+2018-12-09 05:45:47,013 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:45:47,013 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:45:47,071 - lstmimpl - INFO - English: i have a son enxp <eos> 
+
+2018-12-09 05:47:10,520 - lstmimpl - INFO - Epoch: 1, Iteration: 20400, Encoder Loss: 8.91020032650817, Decoder Loss: 9.75788888060388, Learning Rate: 0.1
+2018-12-09 05:47:10,521 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:47:10,522 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:47:10,574 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:48:33,801 - lstmimpl - INFO - Epoch: 1, Iteration: 20500, Encoder Loss: 9.93074925507177, Decoder Loss: 16.803545176450374, Learning Rate: 0.1
+2018-12-09 05:48:33,802 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:48:33,802 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:48:33,871 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 05:49:57,923 - lstmimpl - INFO - Epoch: 1, Iteration: 20600, Encoder Loss: 19.759030830688666, Decoder Loss: 19.312957206945516, Learning Rate: 0.1
+2018-12-09 05:49:57,923 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:49:57,924 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:49:57,976 - lstmimpl - INFO - English: i have a sin enxp <eos> 
+
+2018-12-09 05:51:22,952 - lstmimpl - INFO - Epoch: 1, Iteration: 20700, Encoder Loss: 11.346117518133845, Decoder Loss: 12.645350708410767, Learning Rate: 0.1
+2018-12-09 05:51:22,953 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:51:22,953 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:51:23,023 - lstmimpl - INFO - English: i have a sin enxp <eos> 
+
+2018-12-09 05:52:48,233 - lstmimpl - INFO - Epoch: 1, Iteration: 20800, Encoder Loss: 11.980481266608734, Decoder Loss: 15.093732857400457, Learning Rate: 0.1
+2018-12-09 05:52:48,234 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:52:48,235 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:52:48,301 - lstmimpl - INFO - English: i have a volunteer enxp <eos> 
+
+2018-12-09 05:54:13,971 - lstmimpl - INFO - Epoch: 1, Iteration: 20900, Encoder Loss: 9.222213009374366, Decoder Loss: 10.75525890105099, Learning Rate: 0.1
+2018-12-09 05:54:13,971 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:54:13,972 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:54:14,024 - lstmimpl - INFO - English: i need a volunteer enxp <eos> 
+
+2018-12-09 05:55:40,377 - lstmimpl - INFO - Epoch: 1, Iteration: 21000, Encoder Loss: 8.899017399923126, Decoder Loss: 12.338800480699632, Learning Rate: 0.1
+2018-12-09 05:55:40,378 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:55:40,378 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:55:40,450 - lstmimpl - INFO - English: i have two cats enxp <eos> 
+
+2018-12-09 05:57:05,500 - lstmimpl - INFO - Epoch: 1, Iteration: 21100, Encoder Loss: 17.58707142755091, Decoder Loss: 12.091908471583421, Learning Rate: 0.1
+2018-12-09 05:57:05,500 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:57:05,501 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:57:05,589 - lstmimpl - INFO - English: i have a son enxp <eos> 
+
+2018-12-09 05:58:30,377 - lstmimpl - INFO - Epoch: 1, Iteration: 21200, Encoder Loss: 17.306377813679095, Decoder Loss: 23.748149683155173, Learning Rate: 0.1
+2018-12-09 05:58:30,378 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:58:30,378 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:58:30,429 - lstmimpl - INFO - English: i have a psychic enxp <eos> 
+
+2018-12-09 05:59:55,662 - lstmimpl - INFO - Epoch: 1, Iteration: 21300, Encoder Loss: 11.25705991318545, Decoder Loss: 9.504886385361816, Learning Rate: 0.1
+2018-12-09 05:59:55,663 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 05:59:55,663 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 05:59:55,810 - lstmimpl - INFO - English: i have a volunteer enxp <eos> 
+
+2018-12-09 06:01:20,757 - lstmimpl - INFO - Epoch: 1, Iteration: 21400, Encoder Loss: 8.168929923607534, Decoder Loss: 7.627396844999879, Learning Rate: 0.1
+2018-12-09 06:01:20,757 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:01:20,758 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:01:20,816 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:02:45,864 - lstmimpl - INFO - Epoch: 1, Iteration: 21500, Encoder Loss: 18.574948001604703, Decoder Loss: 12.609202542179137, Learning Rate: 0.1
+2018-12-09 06:02:45,865 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:02:45,866 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:02:45,927 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:04:11,990 - lstmimpl - INFO - Epoch: 1, Iteration: 21600, Encoder Loss: 12.237163779941854, Decoder Loss: 9.018203031603361, Learning Rate: 0.1
+2018-12-09 06:04:11,990 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:04:11,991 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:04:12,045 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 06:05:37,536 - lstmimpl - INFO - Epoch: 1, Iteration: 21700, Encoder Loss: 18.43418880767147, Decoder Loss: 25.359868951374217, Learning Rate: 0.1
+2018-12-09 06:05:37,537 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:05:37,537 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:05:37,604 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 06:07:02,563 - lstmimpl - INFO - Epoch: 1, Iteration: 21800, Encoder Loss: 13.65392388206701, Decoder Loss: 14.490985540317558, Learning Rate: 0.1
+2018-12-09 06:07:02,564 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:07:02,564 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:07:02,670 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 06:08:27,127 - lstmimpl - INFO - Epoch: 1, Iteration: 21900, Encoder Loss: 14.673793009101942, Decoder Loss: 20.154519955521607, Learning Rate: 0.1
+2018-12-09 06:08:27,128 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:08:27,128 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:08:27,197 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 06:09:52,841 - lstmimpl - INFO - Epoch: 1, Iteration: 22000, Encoder Loss: 15.81377444696189, Decoder Loss: 26.479167974060804, Learning Rate: 0.1
+2018-12-09 06:09:52,842 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:09:52,843 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:09:52,911 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 06:11:18,661 - lstmimpl - INFO - Epoch: 1, Iteration: 22100, Encoder Loss: 14.613463862354347, Decoder Loss: 11.328838467408621, Learning Rate: 0.1
+2018-12-09 06:11:18,662 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:11:18,662 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:11:18,715 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 06:12:43,068 - lstmimpl - INFO - Epoch: 1, Iteration: 22200, Encoder Loss: 11.252656729687882, Decoder Loss: 15.189022846277025, Learning Rate: 0.1
+2018-12-09 06:12:43,068 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:12:43,069 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:12:43,147 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 06:14:07,917 - lstmimpl - INFO - Epoch: 1, Iteration: 22300, Encoder Loss: 14.012224226530273, Decoder Loss: 14.644224832771792, Learning Rate: 0.1
+2018-12-09 06:14:07,918 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:14:07,918 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:14:07,988 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 06:15:31,966 - lstmimpl - INFO - Epoch: 1, Iteration: 22400, Encoder Loss: 19.541099390879435, Decoder Loss: 14.440045814953233, Learning Rate: 0.1
+2018-12-09 06:15:31,967 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:15:31,967 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:15:32,016 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 06:16:55,653 - lstmimpl - INFO - Epoch: 1, Iteration: 22500, Encoder Loss: 13.681222658456011, Decoder Loss: 16.10594702754782, Learning Rate: 0.1
+2018-12-09 06:16:55,654 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:16:55,654 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:16:55,793 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 06:18:19,771 - lstmimpl - INFO - Epoch: 1, Iteration: 22600, Encoder Loss: 19.857080828264795, Decoder Loss: 16.12953182569131, Learning Rate: 0.1
+2018-12-09 06:18:19,772 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:18:19,772 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:18:19,832 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 06:19:43,820 - lstmimpl - INFO - Epoch: 1, Iteration: 22700, Encoder Loss: 13.245071430042941, Decoder Loss: 12.30867692043672, Learning Rate: 0.1
+2018-12-09 06:19:43,821 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:19:43,822 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:19:43,892 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 06:21:08,474 - lstmimpl - INFO - Epoch: 1, Iteration: 22800, Encoder Loss: 17.05529559593872, Decoder Loss: 15.550234124282452, Learning Rate: 0.1
+2018-12-09 06:21:08,474 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:21:08,475 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:21:08,535 - lstmimpl - INFO - English: i have a volunteer enxp <eos> 
+
+2018-12-09 06:22:32,477 - lstmimpl - INFO - Epoch: 1, Iteration: 22900, Encoder Loss: 12.532142708868578, Decoder Loss: 16.81119784502718, Learning Rate: 0.1
+2018-12-09 06:22:32,478 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:22:32,479 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:22:32,530 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:23:56,864 - lstmimpl - INFO - Epoch: 1, Iteration: 23000, Encoder Loss: 12.898397300978473, Decoder Loss: 11.309140386247087, Learning Rate: 0.1
+2018-12-09 06:23:56,865 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:23:56,866 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:23:56,934 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 06:25:22,030 - lstmimpl - INFO - Epoch: 1, Iteration: 23100, Encoder Loss: 13.66739918888772, Decoder Loss: 13.848233940410053, Learning Rate: 0.1
+2018-12-09 06:25:22,031 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:25:22,031 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:25:22,092 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 06:26:45,840 - lstmimpl - INFO - Epoch: 1, Iteration: 23200, Encoder Loss: 9.38483763527644, Decoder Loss: 16.091794638134072, Learning Rate: 0.1
+2018-12-09 06:26:45,841 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:26:45,841 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:26:45,890 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 06:28:10,063 - lstmimpl - INFO - Epoch: 1, Iteration: 23300, Encoder Loss: 13.887339924183763, Decoder Loss: 12.95894101384712, Learning Rate: 0.1
+2018-12-09 06:28:10,064 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:28:10,064 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:28:10,143 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 06:29:34,619 - lstmimpl - INFO - Epoch: 1, Iteration: 23400, Encoder Loss: 6.779140688796622, Decoder Loss: 8.091188628387885, Learning Rate: 0.1
+2018-12-09 06:29:34,620 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:29:34,621 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:29:34,746 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 06:30:58,897 - lstmimpl - INFO - Epoch: 1, Iteration: 23500, Encoder Loss: 12.367897667510409, Decoder Loss: 12.379586986866796, Learning Rate: 0.1
+2018-12-09 06:30:58,897 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:30:58,898 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:30:58,949 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:32:22,946 - lstmimpl - INFO - Epoch: 1, Iteration: 23600, Encoder Loss: 15.817809196331247, Decoder Loss: 10.598678791415699, Learning Rate: 0.1
+2018-12-09 06:32:22,947 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:32:22,947 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:32:23,017 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:33:47,401 - lstmimpl - INFO - Epoch: 1, Iteration: 23700, Encoder Loss: 22.343214632867593, Decoder Loss: 16.808323011257563, Learning Rate: 0.1
+2018-12-09 06:33:47,402 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:33:47,402 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:33:47,455 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:35:11,849 - lstmimpl - INFO - Epoch: 1, Iteration: 23800, Encoder Loss: 14.600069770684172, Decoder Loss: 12.839237732230655, Learning Rate: 0.1
+2018-12-09 06:35:11,850 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:35:11,851 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:35:11,968 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:36:35,931 - lstmimpl - INFO - Epoch: 1, Iteration: 23900, Encoder Loss: 14.572730893571272, Decoder Loss: 19.777761789005588, Learning Rate: 0.1
+2018-12-09 06:36:35,931 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:36:35,932 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:36:36,047 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:37:58,987 - lstmimpl - INFO - Models saved successfully!
+2018-12-09 06:38:04,107 - lstmimpl - INFO - Epoch: 2, Iteration: 24000, Encoder Loss: 13.95179981875838, Decoder Loss: 12.462269449340237, Learning Rate: 0.1
+2018-12-09 06:38:04,108 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:38:04,108 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:38:04,236 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 06:39:29,499 - lstmimpl - INFO - Epoch: 2, Iteration: 24100, Encoder Loss: 14.653846463227481, Decoder Loss: 11.86706798261243, Learning Rate: 0.1
+2018-12-09 06:39:29,500 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:39:29,501 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:39:29,569 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 06:40:55,656 - lstmimpl - INFO - Epoch: 2, Iteration: 24200, Encoder Loss: 15.670772426605318, Decoder Loss: 18.035232136438193, Learning Rate: 0.1
+2018-12-09 06:40:55,656 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:40:55,657 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:40:55,746 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 06:42:22,513 - lstmimpl - INFO - Epoch: 2, Iteration: 24300, Encoder Loss: 18.42781319843408, Decoder Loss: 18.18554860972043, Learning Rate: 0.1
+2018-12-09 06:42:22,514 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:42:22,514 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:42:22,567 - lstmimpl - INFO - English: i want a book enxp <eos> 
+
+2018-12-09 06:43:49,643 - lstmimpl - INFO - Epoch: 2, Iteration: 24400, Encoder Loss: 14.439289565439307, Decoder Loss: 20.075331126138543, Learning Rate: 0.1
+2018-12-09 06:43:49,644 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:43:49,644 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:43:49,715 - lstmimpl - INFO - English: i need a song enxp <eos> 
+
+2018-12-09 06:45:16,369 - lstmimpl - INFO - Epoch: 2, Iteration: 24500, Encoder Loss: 8.137530857191777, Decoder Loss: 6.112316431819392, Learning Rate: 0.1
+2018-12-09 06:45:16,370 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:45:16,370 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:45:16,442 - lstmimpl - INFO - English: i have a woman enxp <eos> 
+
+2018-12-09 06:46:41,652 - lstmimpl - INFO - Epoch: 2, Iteration: 24600, Encoder Loss: 5.010231341545387, Decoder Loss: 8.799581974926413, Learning Rate: 0.1
+2018-12-09 06:46:41,653 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:46:41,653 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:46:41,708 - lstmimpl - INFO - English: i have a job enxp <eos> 
+
+2018-12-09 06:48:06,925 - lstmimpl - INFO - Epoch: 2, Iteration: 24700, Encoder Loss: 9.051130325747867, Decoder Loss: 8.379169412044956, Learning Rate: 0.1
+2018-12-09 06:48:06,926 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:48:06,926 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:48:06,976 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:49:31,645 - lstmimpl - INFO - Epoch: 2, Iteration: 24800, Encoder Loss: 7.842960531455084, Decoder Loss: 13.219775932917276, Learning Rate: 0.1
+2018-12-09 06:49:31,645 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:49:31,646 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:49:31,723 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:50:55,713 - lstmimpl - INFO - Epoch: 2, Iteration: 24900, Encoder Loss: 10.335975441002748, Decoder Loss: 9.602200871396615, Learning Rate: 0.1
+2018-12-09 06:50:55,713 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:50:55,714 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:50:55,799 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:52:20,716 - lstmimpl - INFO - Epoch: 2, Iteration: 25000, Encoder Loss: 12.149818815567313, Decoder Loss: 9.885197232106648, Learning Rate: 0.1
+2018-12-09 06:52:20,717 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:52:20,717 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:52:20,769 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:53:45,824 - lstmimpl - INFO - Epoch: 2, Iteration: 25100, Encoder Loss: 13.482164786154074, Decoder Loss: 19.24913312331667, Learning Rate: 0.1
+2018-12-09 06:53:45,825 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:53:45,826 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:53:45,882 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:55:12,418 - lstmimpl - INFO - Epoch: 2, Iteration: 25200, Encoder Loss: 18.328634345796523, Decoder Loss: 15.685138370154029, Learning Rate: 0.1
+2018-12-09 06:55:12,418 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:55:12,419 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:55:12,472 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:56:37,656 - lstmimpl - INFO - Epoch: 2, Iteration: 25300, Encoder Loss: 5.386527228846893, Decoder Loss: 8.077527039228139, Learning Rate: 0.1
+2018-12-09 06:56:37,657 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:56:37,657 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:56:37,730 - lstmimpl - INFO - English: i love the car enxp <eos> 
+
+2018-12-09 06:58:03,134 - lstmimpl - INFO - Epoch: 2, Iteration: 25400, Encoder Loss: 9.812003543002728, Decoder Loss: 7.177726987212201, Learning Rate: 0.1
+2018-12-09 06:58:03,135 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:58:03,135 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:58:03,212 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 06:59:28,361 - lstmimpl - INFO - Epoch: 2, Iteration: 25500, Encoder Loss: 15.998172805186135, Decoder Loss: 15.476548618320932, Learning Rate: 0.1
+2018-12-09 06:59:28,362 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 06:59:28,363 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 06:59:28,420 - lstmimpl - INFO - English: i have a daughters enxp <eos> 
+
+2018-12-09 07:00:53,470 - lstmimpl - INFO - Epoch: 2, Iteration: 25600, Encoder Loss: 7.341566804646009, Decoder Loss: 14.326270029245343, Learning Rate: 0.1
+2018-12-09 07:00:53,471 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:00:53,471 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:00:53,522 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 07:02:19,793 - lstmimpl - INFO - Epoch: 2, Iteration: 25700, Encoder Loss: 15.822947118999359, Decoder Loss: 12.951980422186814, Learning Rate: 0.1
+2018-12-09 07:02:19,794 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:02:19,794 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:02:19,848 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 07:03:45,202 - lstmimpl - INFO - Epoch: 2, Iteration: 25800, Encoder Loss: 11.578626199978519, Decoder Loss: 19.856583297518263, Learning Rate: 0.1
+2018-12-09 07:03:45,203 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:03:45,203 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:03:45,275 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:05:12,282 - lstmimpl - INFO - Epoch: 2, Iteration: 25900, Encoder Loss: 10.880247819810842, Decoder Loss: 9.500213335951903, Learning Rate: 0.1
+2018-12-09 07:05:12,283 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:05:12,283 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:05:12,335 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 07:06:38,992 - lstmimpl - INFO - Epoch: 2, Iteration: 26000, Encoder Loss: 9.38911161781784, Decoder Loss: 6.309052732628767, Learning Rate: 0.1
+2018-12-09 07:06:38,993 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:06:38,994 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:06:39,042 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:08:05,684 - lstmimpl - INFO - Epoch: 2, Iteration: 26100, Encoder Loss: 8.096801500522494, Decoder Loss: 10.606462709775306, Learning Rate: 0.1
+2018-12-09 07:08:05,685 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:08:05,685 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:08:05,766 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:09:33,372 - lstmimpl - INFO - Epoch: 2, Iteration: 26200, Encoder Loss: 10.217502858979621, Decoder Loss: 10.30272577200775, Learning Rate: 0.1
+2018-12-09 07:09:33,372 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:09:33,373 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:09:33,429 - lstmimpl - INFO - English: i have a receipt enxp <eos> 
+
+2018-12-09 07:10:58,019 - lstmimpl - INFO - Epoch: 2, Iteration: 26300, Encoder Loss: 10.549289833987814, Decoder Loss: 9.01522918864465, Learning Rate: 0.1
+2018-12-09 07:10:58,020 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:10:58,021 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:10:58,069 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:12:22,697 - lstmimpl - INFO - Epoch: 2, Iteration: 26400, Encoder Loss: 8.358086212893229, Decoder Loss: 11.146227584803729, Learning Rate: 0.1
+2018-12-09 07:12:22,698 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:12:22,699 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:12:22,782 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:13:47,481 - lstmimpl - INFO - Epoch: 2, Iteration: 26500, Encoder Loss: 18.416754174376972, Decoder Loss: 17.274754697325598, Learning Rate: 0.1
+2018-12-09 07:13:47,482 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:13:47,482 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:13:47,534 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:15:12,321 - lstmimpl - INFO - Epoch: 2, Iteration: 26600, Encoder Loss: 11.373227752735458, Decoder Loss: 11.710130031189006, Learning Rate: 0.1
+2018-12-09 07:15:12,322 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:15:12,322 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:15:12,395 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:16:35,182 - lstmimpl - INFO - Epoch: 2, Iteration: 26700, Encoder Loss: 16.205098441692307, Decoder Loss: 11.763517748032827, Learning Rate: 0.1
+2018-12-09 07:16:35,183 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:16:35,184 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:16:35,235 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:17:57,655 - lstmimpl - INFO - Epoch: 2, Iteration: 26800, Encoder Loss: 3.279118463673962, Decoder Loss: 7.254927362184517, Learning Rate: 0.1
+2018-12-09 07:17:57,656 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:17:57,656 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:17:57,710 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:19:20,249 - lstmimpl - INFO - Epoch: 2, Iteration: 26900, Encoder Loss: 14.115291867625038, Decoder Loss: 22.715866867945028, Learning Rate: 0.1
+2018-12-09 07:19:20,250 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:19:20,250 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:19:20,322 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:20:42,888 - lstmimpl - INFO - Epoch: 2, Iteration: 27000, Encoder Loss: 8.62809446176547, Decoder Loss: 11.05613569563263, Learning Rate: 0.1
+2018-12-09 07:20:42,889 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:20:42,890 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:20:42,959 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 07:22:05,562 - lstmimpl - INFO - Epoch: 2, Iteration: 27100, Encoder Loss: 9.404916781703687, Decoder Loss: 7.365043577672632, Learning Rate: 0.1
+2018-12-09 07:22:05,562 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:22:05,563 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:22:05,641 - lstmimpl - INFO - English: i need a medic enxp <eos> 
+
+2018-12-09 07:23:28,995 - lstmimpl - INFO - Epoch: 2, Iteration: 27200, Encoder Loss: 12.351200503399944, Decoder Loss: 13.563568122210235, Learning Rate: 0.1
+2018-12-09 07:23:28,995 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:23:28,996 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:23:29,065 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 07:24:52,514 - lstmimpl - INFO - Epoch: 2, Iteration: 27300, Encoder Loss: 8.14434915968901, Decoder Loss: 17.855407802227393, Learning Rate: 0.1
+2018-12-09 07:24:52,515 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:24:52,516 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:24:52,566 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 07:26:15,185 - lstmimpl - INFO - Epoch: 2, Iteration: 27400, Encoder Loss: 10.576130516468314, Decoder Loss: 13.30848936488074, Learning Rate: 0.1
+2018-12-09 07:26:15,185 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:26:15,186 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:26:15,235 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 07:27:37,958 - lstmimpl - INFO - Epoch: 2, Iteration: 27500, Encoder Loss: 12.712248548760101, Decoder Loss: 12.96496222708243, Learning Rate: 0.1
+2018-12-09 07:27:37,959 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:27:37,959 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:27:38,009 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 07:29:00,859 - lstmimpl - INFO - Epoch: 2, Iteration: 27600, Encoder Loss: 13.09464243965467, Decoder Loss: 12.462572945961831, Learning Rate: 0.1
+2018-12-09 07:29:00,860 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:29:00,860 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:29:00,908 - lstmimpl - INFO - English: i have a nieces enxp <eos> 
+
+2018-12-09 07:30:23,455 - lstmimpl - INFO - Epoch: 2, Iteration: 27700, Encoder Loss: 15.890233913321024, Decoder Loss: 20.434839010794533, Learning Rate: 0.1
+2018-12-09 07:30:23,456 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:30:23,456 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:30:23,508 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 07:31:46,068 - lstmimpl - INFO - Epoch: 2, Iteration: 27800, Encoder Loss: 8.180192849367135, Decoder Loss: 10.92586506827023, Learning Rate: 0.1
+2018-12-09 07:31:46,069 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:31:46,069 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:31:46,140 - lstmimpl - INFO - English: i have two nieces enxp <eos> 
+
+2018-12-09 07:33:08,658 - lstmimpl - INFO - Epoch: 2, Iteration: 27900, Encoder Loss: 11.731880309578953, Decoder Loss: 11.547145359236373, Learning Rate: 0.1
+2018-12-09 07:33:08,659 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:33:08,659 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:33:08,732 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 07:34:31,567 - lstmimpl - INFO - Epoch: 2, Iteration: 28000, Encoder Loss: 19.251005468616395, Decoder Loss: 25.294169027498672, Learning Rate: 0.1
+2018-12-09 07:34:31,568 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:34:31,569 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:34:31,620 - lstmimpl - INFO - English: i have two nieces enxp <eos> 
+
+2018-12-09 07:36:09,355 - lstmimpl - INFO - Epoch: 2, Iteration: 28100, Encoder Loss: 11.062254220144105, Decoder Loss: 13.096101569956671, Learning Rate: 0.1
+2018-12-09 07:36:09,360 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:36:09,360 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:36:09,410 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 07:37:50,081 - lstmimpl - INFO - Epoch: 2, Iteration: 28200, Encoder Loss: 12.031852317910717, Decoder Loss: 13.801005141070874, Learning Rate: 0.1
+2018-12-09 07:37:50,087 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:37:50,088 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:37:50,180 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 07:39:22,650 - lstmimpl - INFO - Epoch: 2, Iteration: 28300, Encoder Loss: 7.173576132067316, Decoder Loss: 9.10344857295625, Learning Rate: 0.1
+2018-12-09 07:39:22,650 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:39:22,651 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:39:22,724 - lstmimpl - INFO - English: i have a lorry enxp <eos> 
+
+2018-12-09 07:40:54,084 - lstmimpl - INFO - Epoch: 2, Iteration: 28400, Encoder Loss: 9.040509096805533, Decoder Loss: 7.034696908830611, Learning Rate: 0.1
+2018-12-09 07:40:54,085 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:40:54,086 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:40:54,139 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 07:42:23,602 - lstmimpl - INFO - Epoch: 2, Iteration: 28500, Encoder Loss: 10.940409627291407, Decoder Loss: 9.751350143635607, Learning Rate: 0.1
+2018-12-09 07:42:23,614 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:42:23,615 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:42:23,724 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 07:43:50,404 - lstmimpl - INFO - Epoch: 2, Iteration: 28600, Encoder Loss: 10.687209282685714, Decoder Loss: 9.226854144671487, Learning Rate: 0.1
+2018-12-09 07:43:50,404 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:43:50,405 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:43:50,462 - lstmimpl - INFO - English: i have a bicycle enxp <eos> 
+
+2018-12-09 07:45:14,863 - lstmimpl - INFO - Epoch: 2, Iteration: 28700, Encoder Loss: 9.938805227119527, Decoder Loss: 11.913931613509613, Learning Rate: 0.1
+2018-12-09 07:45:14,864 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:45:14,864 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:45:14,935 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 07:46:38,880 - lstmimpl - INFO - Epoch: 2, Iteration: 28800, Encoder Loss: 17.171573622245823, Decoder Loss: 21.9987671915976, Learning Rate: 0.1
+2018-12-09 07:46:38,881 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:46:38,882 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:46:38,933 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:48:02,886 - lstmimpl - INFO - Epoch: 2, Iteration: 28900, Encoder Loss: 21.862552978328733, Decoder Loss: 17.389351830956254, Learning Rate: 0.1
+2018-12-09 07:48:02,887 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:48:02,887 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:48:02,953 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:49:26,900 - lstmimpl - INFO - Epoch: 2, Iteration: 29000, Encoder Loss: 14.86750668853634, Decoder Loss: 9.558253056900266, Learning Rate: 0.1
+2018-12-09 07:49:26,901 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:49:26,901 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:49:26,950 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:50:50,888 - lstmimpl - INFO - Epoch: 2, Iteration: 29100, Encoder Loss: 11.697865769601304, Decoder Loss: 12.053639161704586, Learning Rate: 0.1
+2018-12-09 07:50:50,889 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:50:50,890 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:50:50,940 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:52:15,067 - lstmimpl - INFO - Epoch: 2, Iteration: 29200, Encoder Loss: 12.132479881312573, Decoder Loss: 14.239078960875256, Learning Rate: 0.1
+2018-12-09 07:52:15,068 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:52:15,068 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:52:15,118 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:53:39,339 - lstmimpl - INFO - Epoch: 2, Iteration: 29300, Encoder Loss: 16.58892099841523, Decoder Loss: 22.205510377434283, Learning Rate: 0.1
+2018-12-09 07:53:39,340 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:53:39,340 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:53:39,390 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 07:55:06,530 - lstmimpl - INFO - Epoch: 2, Iteration: 29400, Encoder Loss: 12.07959655426397, Decoder Loss: 12.7894202069163, Learning Rate: 0.1
+2018-12-09 07:55:06,531 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:55:06,531 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:55:06,580 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 07:56:32,100 - lstmimpl - INFO - Epoch: 2, Iteration: 29500, Encoder Loss: 11.368280829885476, Decoder Loss: 14.235643701227104, Learning Rate: 0.1
+2018-12-09 07:56:32,101 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:56:32,102 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:56:32,179 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 07:57:58,024 - lstmimpl - INFO - Epoch: 2, Iteration: 29600, Encoder Loss: 4.465191160831008, Decoder Loss: 4.658561730892154, Learning Rate: 0.1
+2018-12-09 07:57:58,024 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:57:58,025 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:57:58,076 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 07:59:23,886 - lstmimpl - INFO - Epoch: 2, Iteration: 29700, Encoder Loss: 4.911224308849538, Decoder Loss: 6.479326768998313, Learning Rate: 0.1
+2018-12-09 07:59:23,886 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 07:59:23,887 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 07:59:23,939 - lstmimpl - INFO - English: i have a lorry enxp <eos> 
+
+2018-12-09 08:00:49,629 - lstmimpl - INFO - Epoch: 2, Iteration: 29800, Encoder Loss: 11.234805772723195, Decoder Loss: 8.519802653550297, Learning Rate: 0.1
+2018-12-09 08:00:49,630 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:00:49,630 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:00:49,703 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 08:02:15,868 - lstmimpl - INFO - Epoch: 2, Iteration: 29900, Encoder Loss: 15.211993189805828, Decoder Loss: 16.373774915969175, Learning Rate: 0.1
+2018-12-09 08:02:15,868 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:02:15,869 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:02:15,941 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 08:03:41,212 - lstmimpl - INFO - Epoch: 2, Iteration: 30000, Encoder Loss: 12.019332824105993, Decoder Loss: 15.264886235300422, Learning Rate: 0.1
+2018-12-09 08:03:41,213 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:03:41,213 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:03:41,274 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 08:05:06,942 - lstmimpl - INFO - Epoch: 2, Iteration: 30100, Encoder Loss: 15.670084964421227, Decoder Loss: 9.082379477658774, Learning Rate: 0.1
+2018-12-09 08:05:06,943 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:05:06,944 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:05:07,001 - lstmimpl - INFO - English: i have a books enxp <eos> 
+
+2018-12-09 08:06:32,894 - lstmimpl - INFO - Epoch: 2, Iteration: 30200, Encoder Loss: 15.113687406941034, Decoder Loss: 15.68004925609792, Learning Rate: 0.1
+2018-12-09 08:06:32,895 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:06:32,895 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:06:32,946 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 08:07:59,088 - lstmimpl - INFO - Epoch: 2, Iteration: 30300, Encoder Loss: 7.367692203204858, Decoder Loss: 8.839616534629851, Learning Rate: 0.1
+2018-12-09 08:07:59,089 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:07:59,090 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:07:59,140 - lstmimpl - INFO - English: i have a daughter enxp <eos> 
+
+2018-12-09 08:09:25,516 - lstmimpl - INFO - Epoch: 2, Iteration: 30400, Encoder Loss: 14.184221390351132, Decoder Loss: 22.20509044042628, Learning Rate: 0.1
+2018-12-09 08:09:25,517 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:09:25,518 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:09:25,602 - lstmimpl - INFO - English: i have a daughter enxp <eos> 
+
+2018-12-09 08:10:51,024 - lstmimpl - INFO - Epoch: 2, Iteration: 30500, Encoder Loss: 11.51295413284264, Decoder Loss: 8.299118582622775, Learning Rate: 0.1
+2018-12-09 08:10:51,024 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:10:51,025 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:10:51,078 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 08:12:16,200 - lstmimpl - INFO - Epoch: 2, Iteration: 30600, Encoder Loss: 3.1306919170520686, Decoder Loss: 11.282927423477526, Learning Rate: 0.1
+2018-12-09 08:12:16,201 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:12:16,201 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:12:16,274 - lstmimpl - INFO - English: i have a daughter enxp <eos> 
+
+2018-12-09 08:13:41,532 - lstmimpl - INFO - Epoch: 2, Iteration: 30700, Encoder Loss: 9.541616696407806, Decoder Loss: 7.642541037049089, Learning Rate: 0.1
+2018-12-09 08:13:41,533 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:13:41,534 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:13:41,607 - lstmimpl - INFO - English: i have a daughter enxp <eos> 
+
+2018-12-09 08:15:06,962 - lstmimpl - INFO - Epoch: 2, Iteration: 30800, Encoder Loss: 9.526552131166488, Decoder Loss: 11.77274038062167, Learning Rate: 0.1
+2018-12-09 08:15:06,963 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:15:06,964 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:15:07,018 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 08:16:32,094 - lstmimpl - INFO - Epoch: 2, Iteration: 30900, Encoder Loss: 5.152610716031136, Decoder Loss: 6.83556714261085, Learning Rate: 0.1
+2018-12-09 08:16:32,095 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:16:32,095 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:16:32,147 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 08:17:55,477 - lstmimpl - INFO - Epoch: 2, Iteration: 31000, Encoder Loss: 12.816181705760872, Decoder Loss: 18.361816187474883, Learning Rate: 0.1
+2018-12-09 08:17:55,478 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:17:55,478 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:17:55,550 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:19:19,118 - lstmimpl - INFO - Epoch: 2, Iteration: 31100, Encoder Loss: 16.495808949298336, Decoder Loss: 13.367392364641354, Learning Rate: 0.1
+2018-12-09 08:19:19,119 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:19:19,120 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:19:19,212 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:20:42,489 - lstmimpl - INFO - Epoch: 2, Iteration: 31200, Encoder Loss: 14.886134704299861, Decoder Loss: 18.65272975863886, Learning Rate: 0.1
+2018-12-09 08:20:42,490 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:20:42,490 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:20:42,543 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:22:07,339 - lstmimpl - INFO - Epoch: 2, Iteration: 31300, Encoder Loss: 9.936419918776485, Decoder Loss: 10.416837982425628, Learning Rate: 0.1
+2018-12-09 08:22:07,340 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:22:07,341 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:22:07,409 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:23:32,323 - lstmimpl - INFO - Epoch: 2, Iteration: 31400, Encoder Loss: 19.32639374914532, Decoder Loss: 19.94683224364648, Learning Rate: 0.1
+2018-12-09 08:23:32,323 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:23:32,324 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:23:32,376 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:24:57,961 - lstmimpl - INFO - Epoch: 2, Iteration: 31500, Encoder Loss: 11.449408840607319, Decoder Loss: 13.125613310978725, Learning Rate: 0.1
+2018-12-09 08:24:57,962 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:24:57,963 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:24:58,016 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 08:26:22,851 - lstmimpl - INFO - Epoch: 2, Iteration: 31600, Encoder Loss: 10.139188808802727, Decoder Loss: 19.533092022667425, Learning Rate: 0.1
+2018-12-09 08:26:22,852 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:26:22,852 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:26:22,900 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 08:27:47,094 - lstmimpl - INFO - Epoch: 2, Iteration: 31700, Encoder Loss: 5.65505023554418, Decoder Loss: 9.175933571942156, Learning Rate: 0.1
+2018-12-09 08:27:47,095 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:27:47,096 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:27:47,147 - lstmimpl - INFO - English: i have a houses enxp <eos> 
+
+2018-12-09 08:29:11,955 - lstmimpl - INFO - Epoch: 2, Iteration: 31800, Encoder Loss: 9.332289422477897, Decoder Loss: 12.134982392488045, Learning Rate: 0.1
+2018-12-09 08:29:11,956 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:29:11,957 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:29:12,023 - lstmimpl - INFO - English: i have a houses enxp <eos> 
+
+2018-12-09 08:30:35,964 - lstmimpl - INFO - Epoch: 2, Iteration: 31900, Encoder Loss: 12.222144889715898, Decoder Loss: 14.82360803405834, Learning Rate: 0.1
+2018-12-09 08:30:35,965 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:30:35,965 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:30:36,014 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 08:32:00,677 - lstmimpl - INFO - Epoch: 2, Iteration: 32000, Encoder Loss: 10.659720531274106, Decoder Loss: 9.079929809642024, Learning Rate: 0.1
+2018-12-09 08:32:00,678 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:32:00,679 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:32:00,744 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 08:33:25,183 - lstmimpl - INFO - Epoch: 2, Iteration: 32100, Encoder Loss: 13.646803545918933, Decoder Loss: 11.881463414431092, Learning Rate: 0.1
+2018-12-09 08:33:25,183 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:33:25,184 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:33:25,236 - lstmimpl - INFO - English: i have a houses enxp <eos> 
+
+2018-12-09 08:34:49,295 - lstmimpl - INFO - Epoch: 2, Iteration: 32200, Encoder Loss: 9.4840807366468, Decoder Loss: 6.225256528365274, Learning Rate: 0.1
+2018-12-09 08:34:49,296 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:34:49,296 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:34:49,348 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:36:13,848 - lstmimpl - INFO - Epoch: 2, Iteration: 32300, Encoder Loss: 11.952152863780585, Decoder Loss: 16.773682548648665, Learning Rate: 0.1
+2018-12-09 08:36:13,849 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:36:13,849 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:36:13,901 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:37:38,276 - lstmimpl - INFO - Epoch: 2, Iteration: 32400, Encoder Loss: 10.407949032070047, Decoder Loss: 9.51738971883921, Learning Rate: 0.1
+2018-12-09 08:37:38,277 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:37:38,278 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:37:38,326 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 08:39:03,034 - lstmimpl - INFO - Epoch: 2, Iteration: 32500, Encoder Loss: 13.844800078349902, Decoder Loss: 23.419679970346184, Learning Rate: 0.1
+2018-12-09 08:39:03,035 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:39:03,036 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:39:03,089 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:40:28,973 - lstmimpl - INFO - Epoch: 2, Iteration: 32600, Encoder Loss: 13.80741749952685, Decoder Loss: 14.663087145534313, Learning Rate: 0.1
+2018-12-09 08:40:28,974 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:40:28,975 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:40:29,026 - lstmimpl - INFO - English: i have a sin enxp <eos> 
+
+2018-12-09 08:41:53,531 - lstmimpl - INFO - Epoch: 2, Iteration: 32700, Encoder Loss: 17.721427228254623, Decoder Loss: 23.867709792692423, Learning Rate: 0.1
+2018-12-09 08:41:53,532 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:41:53,533 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:41:53,612 - lstmimpl - INFO - English: i have a sin enxp <eos> 
+
+2018-12-09 08:43:18,194 - lstmimpl - INFO - Epoch: 2, Iteration: 32800, Encoder Loss: 15.5605291034464, Decoder Loss: 13.881802584693745, Learning Rate: 0.1
+2018-12-09 08:43:18,195 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:43:18,196 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:43:18,247 - lstmimpl - INFO - English: i have a volunteer enxp <eos> 
+
+2018-12-09 08:44:42,882 - lstmimpl - INFO - Epoch: 2, Iteration: 32900, Encoder Loss: 15.527291048286253, Decoder Loss: 16.869364031953793, Learning Rate: 0.1
+2018-12-09 08:44:42,883 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:44:42,883 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:44:42,949 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 08:46:07,626 - lstmimpl - INFO - Epoch: 2, Iteration: 33000, Encoder Loss: 11.865675380769328, Decoder Loss: 8.924437231070634, Learning Rate: 0.1
+2018-12-09 08:46:07,627 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:46:07,627 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:46:07,693 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:47:31,788 - lstmimpl - INFO - Epoch: 2, Iteration: 33100, Encoder Loss: 20.144841694269648, Decoder Loss: 21.09736004084334, Learning Rate: 0.1
+2018-12-09 08:47:31,789 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:47:31,789 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:47:31,838 - lstmimpl - INFO - English: i have a tomcat enxp <eos> 
+
+2018-12-09 08:48:55,502 - lstmimpl - INFO - Epoch: 2, Iteration: 33200, Encoder Loss: 3.5041429634249197, Decoder Loss: 12.133713992984001, Learning Rate: 0.1
+2018-12-09 08:48:55,503 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:48:55,504 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:48:55,568 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:50:19,698 - lstmimpl - INFO - Epoch: 2, Iteration: 33300, Encoder Loss: 9.896624233588685, Decoder Loss: 7.538699181362017, Learning Rate: 0.1
+2018-12-09 08:50:19,699 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:50:19,699 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:50:19,768 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:51:43,606 - lstmimpl - INFO - Epoch: 2, Iteration: 33400, Encoder Loss: 8.906040906135281, Decoder Loss: 10.761875682374223, Learning Rate: 0.1
+2018-12-09 08:51:43,607 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:51:43,608 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:51:43,656 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 08:53:07,606 - lstmimpl - INFO - Epoch: 2, Iteration: 33500, Encoder Loss: 10.53035975950698, Decoder Loss: 9.127230320484383, Learning Rate: 0.1
+2018-12-09 08:53:07,607 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:53:07,608 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:53:07,656 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 08:54:32,215 - lstmimpl - INFO - Epoch: 2, Iteration: 33600, Encoder Loss: 16.497394976541525, Decoder Loss: 10.623510225826708, Learning Rate: 0.1
+2018-12-09 08:54:32,215 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:54:32,216 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:54:32,269 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 08:55:56,122 - lstmimpl - INFO - Epoch: 2, Iteration: 33700, Encoder Loss: 16.365181703737274, Decoder Loss: 11.736223193009533, Learning Rate: 0.1
+2018-12-09 08:55:56,123 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:55:56,123 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:55:56,215 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:57:20,433 - lstmimpl - INFO - Epoch: 2, Iteration: 33800, Encoder Loss: 8.268781416257793, Decoder Loss: 5.027286870775249, Learning Rate: 0.1
+2018-12-09 08:57:20,434 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:57:20,435 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:57:20,507 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 08:58:44,184 - lstmimpl - INFO - Epoch: 2, Iteration: 33900, Encoder Loss: 6.002571686741638, Decoder Loss: 9.365983048534885, Learning Rate: 0.1
+2018-12-09 08:58:44,185 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 08:58:44,186 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 08:58:44,237 - lstmimpl - INFO - English: i have a grenade enxp <eos> 
+
+2018-12-09 09:00:08,449 - lstmimpl - INFO - Epoch: 2, Iteration: 34000, Encoder Loss: 12.271552325101316, Decoder Loss: 13.606401399932057, Learning Rate: 0.1
+2018-12-09 09:00:08,450 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:00:08,450 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:00:08,501 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 09:01:32,434 - lstmimpl - INFO - Epoch: 2, Iteration: 34100, Encoder Loss: 10.005807466143233, Decoder Loss: 7.748266128132872, Learning Rate: 0.1
+2018-12-09 09:01:32,435 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:01:32,436 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:01:32,510 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:02:56,028 - lstmimpl - INFO - Epoch: 2, Iteration: 34200, Encoder Loss: 19.068138071063988, Decoder Loss: 17.49876499733684, Learning Rate: 0.1
+2018-12-09 09:02:56,029 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:02:56,030 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:02:56,103 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:04:20,581 - lstmimpl - INFO - Epoch: 2, Iteration: 34300, Encoder Loss: 11.71960116494589, Decoder Loss: 7.681619128301716, Learning Rate: 0.1
+2018-12-09 09:04:20,582 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:04:20,583 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:04:20,660 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:05:44,490 - lstmimpl - INFO - Epoch: 2, Iteration: 34400, Encoder Loss: 9.796282508037429, Decoder Loss: 14.20693406776611, Learning Rate: 0.1
+2018-12-09 09:05:44,491 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:05:44,491 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:05:44,540 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:07:08,411 - lstmimpl - INFO - Epoch: 2, Iteration: 34500, Encoder Loss: 10.052900606323105, Decoder Loss: 7.674460826095377, Learning Rate: 0.1
+2018-12-09 09:07:08,412 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:07:08,412 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:07:08,460 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:08:32,511 - lstmimpl - INFO - Epoch: 2, Iteration: 34600, Encoder Loss: 12.644545312843094, Decoder Loss: 13.082575726643778, Learning Rate: 0.1
+2018-12-09 09:08:32,512 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:08:32,512 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:08:32,564 - lstmimpl - INFO - English: i have a boyfriend enxp <eos> 
+
+2018-12-09 09:09:57,630 - lstmimpl - INFO - Epoch: 2, Iteration: 34700, Encoder Loss: 12.359055041348455, Decoder Loss: 20.23665745577005, Learning Rate: 0.1
+2018-12-09 09:09:57,631 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:09:57,631 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:09:57,715 - lstmimpl - INFO - English: i have a visa enxp <eos> 
+
+2018-12-09 09:11:21,700 - lstmimpl - INFO - Epoch: 2, Iteration: 34800, Encoder Loss: 12.517402192064022, Decoder Loss: 12.099774307742784, Learning Rate: 0.1
+2018-12-09 09:11:21,700 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:11:21,701 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:11:21,838 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 09:12:45,592 - lstmimpl - INFO - Epoch: 2, Iteration: 34900, Encoder Loss: 13.253820046190397, Decoder Loss: 15.017590975728003, Learning Rate: 0.1
+2018-12-09 09:12:45,593 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:12:45,593 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:12:45,656 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 09:14:09,823 - lstmimpl - INFO - Epoch: 2, Iteration: 35000, Encoder Loss: 11.955085497701873, Decoder Loss: 17.38521837494119, Learning Rate: 0.1
+2018-12-09 09:14:09,824 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:14:09,824 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:14:09,876 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 09:15:34,041 - lstmimpl - INFO - Epoch: 2, Iteration: 35100, Encoder Loss: 12.458315595541114, Decoder Loss: 20.239186207306247, Learning Rate: 0.1
+2018-12-09 09:15:34,042 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:15:34,043 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:15:34,092 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 09:16:57,917 - lstmimpl - INFO - Epoch: 2, Iteration: 35200, Encoder Loss: 11.907809576741865, Decoder Loss: 10.069713947831602, Learning Rate: 0.1
+2018-12-09 09:16:57,918 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:16:57,918 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:16:57,970 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 09:18:21,977 - lstmimpl - INFO - Epoch: 2, Iteration: 35300, Encoder Loss: 7.666574459598427, Decoder Loss: 8.84261965571861, Learning Rate: 0.1
+2018-12-09 09:18:21,978 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:18:21,979 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:18:22,098 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 09:19:46,211 - lstmimpl - INFO - Epoch: 2, Iteration: 35400, Encoder Loss: 10.83373630467174, Decoder Loss: 15.24731093035972, Learning Rate: 0.1
+2018-12-09 09:19:46,212 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:19:46,212 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:19:46,286 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 09:21:10,589 - lstmimpl - INFO - Epoch: 2, Iteration: 35500, Encoder Loss: 11.983788746201526, Decoder Loss: 19.671827688244726, Learning Rate: 0.1
+2018-12-09 09:21:10,590 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:21:10,590 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:21:10,643 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 09:22:34,090 - lstmimpl - INFO - Epoch: 2, Iteration: 35600, Encoder Loss: 10.268608749314849, Decoder Loss: 14.672976558108122, Learning Rate: 0.1
+2018-12-09 09:22:34,090 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:22:34,091 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:22:34,143 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 09:23:57,859 - lstmimpl - INFO - Epoch: 2, Iteration: 35700, Encoder Loss: 17.22386981333499, Decoder Loss: 16.643383923288336, Learning Rate: 0.1
+2018-12-09 09:23:57,860 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:23:57,860 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:23:57,933 - lstmimpl - INFO - English: i have a cat enxp <eos> 
+
+2018-12-09 09:25:23,587 - lstmimpl - INFO - Epoch: 2, Iteration: 35800, Encoder Loss: 19.899439936809415, Decoder Loss: 23.21779183406365, Learning Rate: 0.1
+2018-12-09 09:25:23,588 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:25:23,589 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:25:23,664 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 09:26:47,467 - lstmimpl - INFO - Epoch: 2, Iteration: 35900, Encoder Loss: 14.501862077697956, Decoder Loss: 11.729246644611726, Learning Rate: 0.1
+2018-12-09 09:26:47,468 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:26:47,469 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:26:47,521 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 09:28:09,095 - lstmimpl - INFO - Models saved successfully!
+2018-12-09 09:28:15,890 - lstmimpl - INFO - Epoch: 3, Iteration: 36000, Encoder Loss: 11.85561400059278, Decoder Loss: 19.668318854410877, Learning Rate: 0.1
+2018-12-09 09:28:15,890 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:28:15,891 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:28:15,992 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:29:40,398 - lstmimpl - INFO - Epoch: 3, Iteration: 36100, Encoder Loss: 10.807790050996838, Decoder Loss: 11.785025113502028, Learning Rate: 0.1
+2018-12-09 09:29:40,399 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:29:40,399 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:29:40,472 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 09:31:04,883 - lstmimpl - INFO - Epoch: 3, Iteration: 36200, Encoder Loss: 7.98550754342353, Decoder Loss: 8.031119123351331, Learning Rate: 0.1
+2018-12-09 09:31:04,884 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:31:04,884 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:31:04,959 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 09:32:29,107 - lstmimpl - INFO - Epoch: 3, Iteration: 36300, Encoder Loss: 8.088921459336529, Decoder Loss: 8.32068544762496, Learning Rate: 0.1
+2018-12-09 09:32:29,108 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:32:29,109 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:32:29,157 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 09:33:53,594 - lstmimpl - INFO - Epoch: 3, Iteration: 36400, Encoder Loss: 10.069166851361938, Decoder Loss: 10.724010032313716, Learning Rate: 0.1
+2018-12-09 09:33:53,595 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:33:53,596 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:33:53,666 - lstmimpl - INFO - English: i need a envelope enxp <eos> 
+
+2018-12-09 09:35:17,987 - lstmimpl - INFO - Epoch: 3, Iteration: 36500, Encoder Loss: 10.184883245488887, Decoder Loss: 10.891563791145053, Learning Rate: 0.1
+2018-12-09 09:35:17,987 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:35:17,988 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:35:18,036 - lstmimpl - INFO - English: i need a enemy enxp <eos> 
+
+2018-12-09 09:36:42,033 - lstmimpl - INFO - Epoch: 3, Iteration: 36600, Encoder Loss: 8.252794421566291, Decoder Loss: 4.900130209544124, Learning Rate: 0.1
+2018-12-09 09:36:42,034 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:36:42,034 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:36:42,087 - lstmimpl - INFO - English: i have a reservation enxp <eos> 
+
+2018-12-09 09:38:07,226 - lstmimpl - INFO - Epoch: 3, Iteration: 36700, Encoder Loss: 4.515508183448868, Decoder Loss: 11.085968625253576, Learning Rate: 0.1
+2018-12-09 09:38:07,227 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:38:07,227 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:38:07,279 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:39:35,063 - lstmimpl - INFO - Epoch: 3, Iteration: 36800, Encoder Loss: 4.231743960432889, Decoder Loss: 4.015270369770505, Learning Rate: 0.1
+2018-12-09 09:39:35,064 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:39:35,064 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:39:35,114 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:41:01,012 - lstmimpl - INFO - Epoch: 3, Iteration: 36900, Encoder Loss: 9.604512490332194, Decoder Loss: 13.023098217652185, Learning Rate: 0.1
+2018-12-09 09:41:01,012 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:41:01,013 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:41:01,065 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:42:27,220 - lstmimpl - INFO - Epoch: 3, Iteration: 37000, Encoder Loss: 6.375187309792882, Decoder Loss: 16.85967999578101, Learning Rate: 0.1
+2018-12-09 09:42:27,221 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:42:27,222 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:42:27,274 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:43:53,201 - lstmimpl - INFO - Epoch: 3, Iteration: 37100, Encoder Loss: 10.27160702275319, Decoder Loss: 17.04153467511528, Learning Rate: 0.1
+2018-12-09 09:43:53,202 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:43:53,202 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:43:53,274 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:45:18,934 - lstmimpl - INFO - Epoch: 3, Iteration: 37200, Encoder Loss: 9.897285216780544, Decoder Loss: 10.838154367877536, Learning Rate: 0.1
+2018-12-09 09:45:18,935 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:45:18,936 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:45:18,984 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:46:44,824 - lstmimpl - INFO - Epoch: 3, Iteration: 37300, Encoder Loss: 10.087386963315117, Decoder Loss: 13.821587530709193, Learning Rate: 0.1
+2018-12-09 09:46:44,825 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:46:44,825 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:46:44,877 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:48:10,840 - lstmimpl - INFO - Epoch: 3, Iteration: 37400, Encoder Loss: 9.400611445237212, Decoder Loss: 14.836917588073263, Learning Rate: 0.1
+2018-12-09 09:48:10,841 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:48:10,841 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:48:10,893 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 09:49:36,531 - lstmimpl - INFO - Epoch: 3, Iteration: 37500, Encoder Loss: 10.1320948120873, Decoder Loss: 4.9176110236974875, Learning Rate: 0.1
+2018-12-09 09:49:36,532 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:49:36,533 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:49:36,607 - lstmimpl - INFO - English: i have a cameras enxp <eos> 
+
+2018-12-09 09:51:02,498 - lstmimpl - INFO - Epoch: 3, Iteration: 37600, Encoder Loss: 10.292489880470594, Decoder Loss: 15.9915397586983, Learning Rate: 0.1
+2018-12-09 09:51:02,499 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:51:02,499 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:51:02,547 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 09:52:28,527 - lstmimpl - INFO - Epoch: 3, Iteration: 37700, Encoder Loss: 14.722011680914145, Decoder Loss: 9.70862489906, Learning Rate: 0.1
+2018-12-09 09:52:28,528 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:52:28,529 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:52:28,580 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 09:53:54,791 - lstmimpl - INFO - Epoch: 3, Iteration: 37800, Encoder Loss: 11.888563603395337, Decoder Loss: 8.23121907064074, Learning Rate: 0.1
+2018-12-09 09:53:54,792 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:53:54,792 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:53:54,862 - lstmimpl - INFO - English: i have two books enxp <eos> 
+
+2018-12-09 09:55:21,197 - lstmimpl - INFO - Epoch: 3, Iteration: 37900, Encoder Loss: 11.038496509998302, Decoder Loss: 9.533115549614298, Learning Rate: 0.1
+2018-12-09 09:55:21,198 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:55:21,198 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:55:21,272 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 09:56:46,577 - lstmimpl - INFO - Epoch: 3, Iteration: 38000, Encoder Loss: 9.802835864167932, Decoder Loss: 6.977316171660501, Learning Rate: 0.1
+2018-12-09 09:56:46,578 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:56:46,579 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:56:46,672 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 09:58:12,418 - lstmimpl - INFO - Epoch: 3, Iteration: 38100, Encoder Loss: 12.184730088169562, Decoder Loss: 11.044331777982194, Learning Rate: 0.1
+2018-12-09 09:58:12,419 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:58:12,420 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:58:12,472 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 09:59:38,153 - lstmimpl - INFO - Epoch: 3, Iteration: 38200, Encoder Loss: 7.507448842978761, Decoder Loss: 13.864641622904978, Learning Rate: 0.1
+2018-12-09 09:59:38,154 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 09:59:38,154 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 09:59:38,244 - lstmimpl - INFO - English: i have a receipt enxp <eos> 
+
+2018-12-09 10:01:04,000 - lstmimpl - INFO - Epoch: 3, Iteration: 38300, Encoder Loss: 9.789776896094338, Decoder Loss: 7.164015966855139, Learning Rate: 0.1
+2018-12-09 10:01:04,000 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:01:04,001 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:01:04,054 - lstmimpl - INFO - English: i have a receipt enxp <eos> 
+
+2018-12-09 10:02:29,428 - lstmimpl - INFO - Epoch: 3, Iteration: 38400, Encoder Loss: 9.716592612471619, Decoder Loss: 13.164248184199707, Learning Rate: 0.1
+2018-12-09 10:02:29,428 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:02:29,429 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:02:29,480 - lstmimpl - INFO - English: i have a receipt enxp <eos> 
+
+2018-12-09 10:03:54,796 - lstmimpl - INFO - Epoch: 3, Iteration: 38500, Encoder Loss: 10.246527294660135, Decoder Loss: 8.580030400279608, Learning Rate: 0.1
+2018-12-09 10:03:54,796 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:03:54,797 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:03:54,869 - lstmimpl - INFO - English: i have a receipt enxp <eos> 
+
+2018-12-09 10:05:20,492 - lstmimpl - INFO - Epoch: 3, Iteration: 38600, Encoder Loss: 7.682939285937828, Decoder Loss: 14.55118022973565, Learning Rate: 0.1
+2018-12-09 10:05:20,493 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:05:20,494 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:05:20,546 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 10:06:45,902 - lstmimpl - INFO - Epoch: 3, Iteration: 38700, Encoder Loss: 9.459402343462266, Decoder Loss: 16.125069002426322, Learning Rate: 0.1
+2018-12-09 10:06:45,903 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:06:45,904 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:06:45,952 - lstmimpl - INFO - English: i have a hurry enxp <eos> 
+
+2018-12-09 10:08:11,558 - lstmimpl - INFO - Epoch: 3, Iteration: 38800, Encoder Loss: 7.756312272693078, Decoder Loss: 6.975431508346539, Learning Rate: 0.1
+2018-12-09 10:08:11,558 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:08:11,559 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:08:11,683 - lstmimpl - INFO - English: i have a scooter enxp <eos> 
+
+2018-12-09 10:09:38,755 - lstmimpl - INFO - Epoch: 3, Iteration: 38900, Encoder Loss: 8.116733196781807, Decoder Loss: 13.925265517462112, Learning Rate: 0.1
+2018-12-09 10:09:38,756 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:09:38,757 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:09:38,810 - lstmimpl - INFO - English: i have a scooter enxp <eos> 
+
+2018-12-09 10:11:04,395 - lstmimpl - INFO - Epoch: 3, Iteration: 39000, Encoder Loss: 7.775914980700037, Decoder Loss: 6.441037184232851, Learning Rate: 0.1
+2018-12-09 10:11:04,396 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:11:04,397 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:11:04,456 - lstmimpl - INFO - English: i have a scooter enxp <eos> 
+
+2018-12-09 10:12:29,484 - lstmimpl - INFO - Epoch: 3, Iteration: 39100, Encoder Loss: 13.604787758780402, Decoder Loss: 12.330916977887437, Learning Rate: 0.1
+2018-12-09 10:12:29,485 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:12:29,486 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:12:29,567 - lstmimpl - INFO - English: i need a medic enxp <eos> 
+
+2018-12-09 10:13:54,835 - lstmimpl - INFO - Epoch: 3, Iteration: 39200, Encoder Loss: 9.618944276728454, Decoder Loss: 21.39583090635324, Learning Rate: 0.1
+2018-12-09 10:13:54,836 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:13:54,836 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:13:54,889 - lstmimpl - INFO - English: i have a scooter enxp <eos> 
+
+2018-12-09 10:15:20,118 - lstmimpl - INFO - Epoch: 3, Iteration: 39300, Encoder Loss: 9.068938087124272, Decoder Loss: 10.540627599588822, Learning Rate: 0.1
+2018-12-09 10:15:20,119 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:15:20,120 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:15:20,187 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 10:16:45,578 - lstmimpl - INFO - Epoch: 3, Iteration: 39400, Encoder Loss: 6.505080589801035, Decoder Loss: 11.344393029571338, Learning Rate: 0.1
+2018-12-09 10:16:45,579 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:16:45,580 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:16:45,659 - lstmimpl - INFO - English: i have a scooter enxp <eos> 
+
+2018-12-09 10:18:11,072 - lstmimpl - INFO - Epoch: 3, Iteration: 39500, Encoder Loss: 10.11149106591179, Decoder Loss: 18.520854441232554, Learning Rate: 0.1
+2018-12-09 10:18:11,073 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:18:11,073 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:18:11,146 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 10:19:36,439 - lstmimpl - INFO - Epoch: 3, Iteration: 39600, Encoder Loss: 13.326801070066884, Decoder Loss: 15.268753524405827, Learning Rate: 0.1
+2018-12-09 10:19:36,440 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:19:36,440 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:19:36,493 - lstmimpl - INFO - English: i have a computer enxp <eos> 
+
+2018-12-09 10:21:01,884 - lstmimpl - INFO - Epoch: 3, Iteration: 39700, Encoder Loss: 10.599649391344323, Decoder Loss: 12.281883492603534, Learning Rate: 0.1
+2018-12-09 10:21:01,885 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:21:01,885 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:21:01,934 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 10:22:27,602 - lstmimpl - INFO - Epoch: 3, Iteration: 39800, Encoder Loss: 12.481916813278787, Decoder Loss: 17.3156088537724, Learning Rate: 0.1
+2018-12-09 10:22:27,602 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:22:27,603 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:22:27,655 - lstmimpl - INFO - English: i have two nieces enxp <eos> 
+
+2018-12-09 10:23:53,351 - lstmimpl - INFO - Epoch: 3, Iteration: 39900, Encoder Loss: 12.944267315467643, Decoder Loss: 17.62811120914394, Learning Rate: 0.1
+2018-12-09 10:23:53,352 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:23:53,353 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:23:53,405 - lstmimpl - INFO - English: i have two nieces enxp <eos> 
+
+2018-12-09 10:25:19,982 - lstmimpl - INFO - Epoch: 3, Iteration: 40000, Encoder Loss: 6.329252909803417, Decoder Loss: 9.72302138227741, Learning Rate: 0.1
+2018-12-09 10:25:19,984 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:25:19,984 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:25:20,038 - lstmimpl - INFO - English: i have two nieces enxp <eos> 
+
+2018-12-09 10:26:45,443 - lstmimpl - INFO - Epoch: 3, Iteration: 40100, Encoder Loss: 9.27813951896953, Decoder Loss: 18.153067784101, Learning Rate: 0.1
+2018-12-09 10:26:45,444 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:26:45,444 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:26:45,493 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 10:28:11,653 - lstmimpl - INFO - Epoch: 3, Iteration: 40200, Encoder Loss: 14.065969563903998, Decoder Loss: 15.465690711512567, Learning Rate: 0.1
+2018-12-09 10:28:11,654 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:28:11,655 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:28:11,765 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 10:29:37,992 - lstmimpl - INFO - Epoch: 3, Iteration: 40300, Encoder Loss: 13.10054430472647, Decoder Loss: 7.18377468583799, Learning Rate: 0.1
+2018-12-09 10:29:37,993 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:29:37,993 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:29:38,045 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 10:31:03,830 - lstmimpl - INFO - Epoch: 3, Iteration: 40400, Encoder Loss: 4.926648416754455, Decoder Loss: 14.24563134509537, Learning Rate: 0.1
+2018-12-09 10:31:03,831 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:31:03,831 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:31:03,884 - lstmimpl - INFO - English: i have a family enxp <eos> 
+
+2018-12-09 10:32:28,916 - lstmimpl - INFO - Epoch: 3, Iteration: 40500, Encoder Loss: 10.013184145970262, Decoder Loss: 9.339325543145751, Learning Rate: 0.1
+2018-12-09 10:32:28,917 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:32:28,918 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:32:29,012 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 10:33:54,461 - lstmimpl - INFO - Epoch: 3, Iteration: 40600, Encoder Loss: 12.058645723651319, Decoder Loss: 13.225567970319444, Learning Rate: 0.1
+2018-12-09 10:33:54,461 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:33:54,462 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:33:54,530 - lstmimpl - INFO - English: i have a bicycle enxp <eos> 
+
+2018-12-09 10:35:19,297 - lstmimpl - INFO - Epoch: 3, Iteration: 40700, Encoder Loss: 10.601893818336004, Decoder Loss: 11.645884113720351, Learning Rate: 0.1
+2018-12-09 10:35:19,298 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:35:19,299 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:35:19,355 - lstmimpl - INFO - English: i have a bicycle enxp <eos> 
+
+2018-12-09 10:36:43,957 - lstmimpl - INFO - Epoch: 3, Iteration: 40800, Encoder Loss: 11.9117852097611, Decoder Loss: 10.436169471599605, Learning Rate: 0.1
+2018-12-09 10:36:43,958 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:36:43,958 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:36:44,008 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 10:38:09,250 - lstmimpl - INFO - Epoch: 3, Iteration: 40900, Encoder Loss: 7.056144339894254, Decoder Loss: 15.208081398249204, Learning Rate: 0.1
+2018-12-09 10:38:09,251 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:38:09,251 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:38:09,303 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 10:39:35,345 - lstmimpl - INFO - Epoch: 3, Iteration: 41000, Encoder Loss: 6.129021703860398, Decoder Loss: 10.483701860764768, Learning Rate: 0.1
+2018-12-09 10:39:35,346 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:39:35,346 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:39:35,398 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 10:41:00,552 - lstmimpl - INFO - Epoch: 3, Iteration: 41100, Encoder Loss: 6.96668210992199, Decoder Loss: 10.915103011373692, Learning Rate: 0.1
+2018-12-09 10:41:00,553 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:41:00,553 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:41:00,642 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 10:42:25,589 - lstmimpl - INFO - Epoch: 3, Iteration: 41200, Encoder Loss: 9.159565113265261, Decoder Loss: 8.78467056716074, Learning Rate: 0.1
+2018-12-09 10:42:25,590 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:42:25,590 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:42:25,643 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 10:43:50,267 - lstmimpl - INFO - Epoch: 3, Iteration: 41300, Encoder Loss: 12.61440388368777, Decoder Loss: 12.22615096442521, Learning Rate: 0.1
+2018-12-09 10:43:50,268 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:43:50,268 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:43:50,320 - lstmimpl - INFO - English: i have two cousins enxp <eos> 
+
+2018-12-09 10:45:16,072 - lstmimpl - INFO - Epoch: 3, Iteration: 41400, Encoder Loss: 9.43470525818559, Decoder Loss: 8.16436210967088, Learning Rate: 0.1
+2018-12-09 10:45:16,073 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:45:16,073 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:45:16,145 - lstmimpl - INFO - English: i have a halfbrother enxp <eos> 
+
+2018-12-09 10:46:40,939 - lstmimpl - INFO - Epoch: 3, Iteration: 41500, Encoder Loss: 10.536753682764338, Decoder Loss: 9.54135088705014, Learning Rate: 0.1
+2018-12-09 10:46:40,940 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:46:40,941 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:46:40,989 - lstmimpl - INFO - English: i have a halfbrother enxp <eos> 
+
+2018-12-09 10:48:06,772 - lstmimpl - INFO - Epoch: 3, Iteration: 41600, Encoder Loss: 10.02948568030657, Decoder Loss: 12.634890767942878, Learning Rate: 0.1
+2018-12-09 10:48:06,773 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:48:06,773 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:48:06,824 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 10:49:31,941 - lstmimpl - INFO - Epoch: 3, Iteration: 41700, Encoder Loss: 9.851112510184473, Decoder Loss: 14.078585341518258, Learning Rate: 0.1
+2018-12-09 10:49:31,942 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:49:31,943 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:49:31,995 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 10:50:56,592 - lstmimpl - INFO - Epoch: 3, Iteration: 41800, Encoder Loss: 10.156588240910782, Decoder Loss: 22.57020310596279, Learning Rate: 0.1
+2018-12-09 10:50:56,593 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:50:56,593 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:50:56,645 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 10:52:21,607 - lstmimpl - INFO - Epoch: 3, Iteration: 41900, Encoder Loss: 17.43406764502797, Decoder Loss: 15.336748784385556, Learning Rate: 0.1
+2018-12-09 10:52:21,608 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:52:21,608 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:52:21,748 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 10:53:47,159 - lstmimpl - INFO - Epoch: 3, Iteration: 42000, Encoder Loss: 5.808513914884905, Decoder Loss: 9.05182819692931, Learning Rate: 0.1
+2018-12-09 10:53:47,160 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:53:47,161 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:53:47,259 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 10:55:14,256 - lstmimpl - INFO - Epoch: 3, Iteration: 42100, Encoder Loss: 6.740301088949558, Decoder Loss: 12.206941899929058, Learning Rate: 0.1
+2018-12-09 10:55:14,257 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:55:14,258 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:55:14,309 - lstmimpl - INFO - English: i have a wife enxp <eos> 
+
+2018-12-09 10:56:39,481 - lstmimpl - INFO - Epoch: 3, Iteration: 42200, Encoder Loss: 10.151623442895362, Decoder Loss: 8.228814745538475, Learning Rate: 0.1
+2018-12-09 10:56:39,482 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:56:39,483 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:56:39,531 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 10:58:05,180 - lstmimpl - INFO - Epoch: 3, Iteration: 42300, Encoder Loss: 14.890486440465487, Decoder Loss: 11.459299487341555, Learning Rate: 0.1
+2018-12-09 10:58:05,181 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:58:05,182 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:58:05,296 - lstmimpl - INFO - English: i have a daughter enxp <eos> 
+
+2018-12-09 10:59:30,565 - lstmimpl - INFO - Epoch: 3, Iteration: 42400, Encoder Loss: 6.561300608505773, Decoder Loss: 8.918558709132377, Learning Rate: 0.1
+2018-12-09 10:59:30,566 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 10:59:30,566 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 10:59:30,617 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 11:00:55,621 - lstmimpl - INFO - Epoch: 3, Iteration: 42500, Encoder Loss: 6.076512106732821, Decoder Loss: 5.90036917565345, Learning Rate: 0.1
+2018-12-09 11:00:55,622 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:00:55,622 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:00:55,694 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 11:02:20,482 - lstmimpl - INFO - Epoch: 3, Iteration: 42600, Encoder Loss: 14.124845988727436, Decoder Loss: 13.291946606052687, Learning Rate: 0.1
+2018-12-09 11:02:20,483 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:02:20,484 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:02:20,532 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 11:03:45,762 - lstmimpl - INFO - Epoch: 3, Iteration: 42700, Encoder Loss: 10.474822074058451, Decoder Loss: 11.170005992283107, Learning Rate: 0.1
+2018-12-09 11:03:45,763 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:03:45,763 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:03:45,821 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 11:05:11,441 - lstmimpl - INFO - Epoch: 3, Iteration: 42800, Encoder Loss: 6.2086266035165, Decoder Loss: 9.936996376343314, Learning Rate: 0.1
+2018-12-09 11:05:11,442 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:05:11,442 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:05:11,491 - lstmimpl - INFO - English: i have a car enxp <eos> 
+
+2018-12-09 11:06:36,805 - lstmimpl - INFO - Epoch: 3, Iteration: 42900, Encoder Loss: 9.547159071997672, Decoder Loss: 10.293698284463765, Learning Rate: 0.1
+2018-12-09 11:06:36,806 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:06:36,806 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:06:36,858 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 11:08:02,952 - lstmimpl - INFO - Epoch: 3, Iteration: 43000, Encoder Loss: 11.533026836988324, Decoder Loss: 10.309776737023848, Learning Rate: 0.1
+2018-12-09 11:08:02,952 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:08:02,953 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:08:03,042 - lstmimpl - INFO - English: i have a map enxp <eos> 
+
+2018-12-09 11:09:30,002 - lstmimpl - INFO - Epoch: 3, Iteration: 43100, Encoder Loss: 8.266368654386538, Decoder Loss: 10.789499724695402, Learning Rate: 0.1
+2018-12-09 11:09:30,002 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:09:30,003 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:09:30,054 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 11:10:55,162 - lstmimpl - INFO - Epoch: 3, Iteration: 43200, Encoder Loss: 10.334949250813075, Decoder Loss: 9.18461291087869, Learning Rate: 0.1
+2018-12-09 11:10:55,163 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:10:55,163 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:10:55,242 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 11:12:20,463 - lstmimpl - INFO - Epoch: 3, Iteration: 43300, Encoder Loss: 9.248282903772468, Decoder Loss: 15.533048985329394, Learning Rate: 0.1
+2018-12-09 11:12:20,463 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:12:20,464 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:12:20,515 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:13:45,949 - lstmimpl - INFO - Epoch: 3, Iteration: 43400, Encoder Loss: 11.247048841575713, Decoder Loss: 17.106072620505238, Learning Rate: 0.1
+2018-12-09 11:13:45,949 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:13:45,950 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:13:45,999 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:15:11,975 - lstmimpl - INFO - Epoch: 3, Iteration: 43500, Encoder Loss: 8.636493272720399, Decoder Loss: 17.129678370549744, Learning Rate: 0.1
+2018-12-09 11:15:11,976 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:15:11,976 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:15:12,029 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:16:37,483 - lstmimpl - INFO - Epoch: 3, Iteration: 43600, Encoder Loss: 15.398483450317963, Decoder Loss: 24.02745099396625, Learning Rate: 0.1
+2018-12-09 11:16:37,483 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:16:37,484 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:16:37,544 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:18:02,547 - lstmimpl - INFO - Epoch: 3, Iteration: 43700, Encoder Loss: 8.950104457728486, Decoder Loss: 11.454558197658443, Learning Rate: 0.1
+2018-12-09 11:18:02,548 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:18:02,548 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:18:02,630 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 11:19:30,091 - lstmimpl - INFO - Epoch: 3, Iteration: 43800, Encoder Loss: 13.572306335778485, Decoder Loss: 10.953954122558976, Learning Rate: 0.1
+2018-12-09 11:19:30,091 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:19:30,092 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:19:30,144 - lstmimpl - INFO - English: i have a sword enxp <eos> 
+
+2018-12-09 11:20:57,429 - lstmimpl - INFO - Epoch: 3, Iteration: 43900, Encoder Loss: 9.109793226472872, Decoder Loss: 9.99675307241092, Learning Rate: 0.1
+2018-12-09 11:20:57,430 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:20:57,430 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:20:57,502 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 11:22:25,436 - lstmimpl - INFO - Epoch: 3, Iteration: 44000, Encoder Loss: 8.841803676031825, Decoder Loss: 11.766946542290599, Learning Rate: 0.1
+2018-12-09 11:22:25,437 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:22:25,437 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:22:25,489 - lstmimpl - INFO - English: i have a picture enxp <eos> 
+
+2018-12-09 11:23:57,084 - lstmimpl - INFO - Epoch: 3, Iteration: 44100, Encoder Loss: 6.890200225990851, Decoder Loss: 5.105865063891893, Learning Rate: 0.1
+2018-12-09 11:23:57,085 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:23:57,086 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:23:57,141 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:25:42,677 - lstmimpl - INFO - Epoch: 3, Iteration: 44200, Encoder Loss: 11.267635409125855, Decoder Loss: 9.02893847054808, Learning Rate: 0.1
+2018-12-09 11:25:42,678 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:25:42,678 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:25:42,730 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:27:13,491 - lstmimpl - INFO - Epoch: 3, Iteration: 44300, Encoder Loss: 9.59410613063572, Decoder Loss: 9.63910282213186, Learning Rate: 0.1
+2018-12-09 11:27:13,492 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:27:13,492 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:27:13,572 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:28:57,168 - lstmimpl - INFO - Epoch: 3, Iteration: 44400, Encoder Loss: 11.876796041676698, Decoder Loss: 7.2532646796464615, Learning Rate: 0.1
+2018-12-09 11:28:57,179 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:28:57,181 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:28:57,312 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:30:30,608 - lstmimpl - INFO - Epoch: 3, Iteration: 44500, Encoder Loss: 7.457181130159572, Decoder Loss: 9.631468907200711, Learning Rate: 0.1
+2018-12-09 11:30:30,609 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:30:30,609 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:30:30,660 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:31:56,465 - lstmimpl - INFO - Epoch: 3, Iteration: 44600, Encoder Loss: 15.327699936866068, Decoder Loss: 18.473025211513775, Learning Rate: 0.1
+2018-12-09 11:31:56,466 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:31:56,466 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:31:56,517 - lstmimpl - INFO - English: i have a sin enxp <eos> 
+
+2018-12-09 11:33:20,562 - lstmimpl - INFO - Epoch: 3, Iteration: 44700, Encoder Loss: 9.033512343386883, Decoder Loss: 8.371588828597732, Learning Rate: 0.1
+2018-12-09 11:33:20,563 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:33:20,564 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:33:20,632 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 11:34:44,141 - lstmimpl - INFO - Epoch: 3, Iteration: 44800, Encoder Loss: 14.57204833472841, Decoder Loss: 17.452492761837096, Learning Rate: 0.1
+2018-12-09 11:34:44,141 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:34:44,142 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:34:44,194 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:36:07,973 - lstmimpl - INFO - Epoch: 3, Iteration: 44900, Encoder Loss: 8.337572112692932, Decoder Loss: 4.582932344796133, Learning Rate: 0.1
+2018-12-09 11:36:07,974 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:36:07,975 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:36:08,047 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 11:37:32,467 - lstmimpl - INFO - Epoch: 3, Iteration: 45000, Encoder Loss: 9.321250827821773, Decoder Loss: 6.897873954710072, Learning Rate: 0.1
+2018-12-09 11:37:32,468 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:37:32,469 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:37:32,546 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:39:02,565 - lstmimpl - INFO - Epoch: 3, Iteration: 45100, Encoder Loss: 11.149501410154828, Decoder Loss: 14.974955477469345, Learning Rate: 0.1
+2018-12-09 11:39:02,566 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:39:02,566 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:39:02,651 - lstmimpl - INFO - English: i have a tomcat enxp <eos> 
+
+2018-12-09 11:40:25,590 - lstmimpl - INFO - Epoch: 3, Iteration: 45200, Encoder Loss: 10.477251631986723, Decoder Loss: 8.557904704420022, Learning Rate: 0.1
+2018-12-09 11:40:25,591 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:40:25,591 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:40:25,643 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 11:41:52,955 - lstmimpl - INFO - Epoch: 3, Iteration: 45300, Encoder Loss: 7.674767241667308, Decoder Loss: 13.194992588941805, Learning Rate: 0.1
+2018-12-09 11:41:52,956 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:41:52,957 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:41:53,008 - lstmimpl - INFO - English: i have a passport enxp <eos> 
+
+2018-12-09 11:43:19,242 - lstmimpl - INFO - Epoch: 3, Iteration: 45400, Encoder Loss: 5.894211761007365, Decoder Loss: 8.580250545899448, Learning Rate: 0.1
+2018-12-09 11:43:19,243 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:43:19,244 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:43:19,295 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 11:44:59,715 - lstmimpl - INFO - Epoch: 3, Iteration: 45500, Encoder Loss: 3.59236627905969, Decoder Loss: 4.893711394282387, Learning Rate: 0.1
+2018-12-09 11:44:59,722 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:44:59,723 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:44:59,883 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 11:46:58,263 - lstmimpl - INFO - Epoch: 3, Iteration: 45600, Encoder Loss: 8.180526527473205, Decoder Loss: 6.962041210160136, Learning Rate: 0.1
+2018-12-09 11:46:58,264 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:46:58,265 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:46:58,317 - lstmimpl - INFO - English: i have a rottweiler enxp <eos> 
+
+2018-12-09 11:48:20,397 - lstmimpl - INFO - Epoch: 3, Iteration: 45700, Encoder Loss: 5.352051747848856, Decoder Loss: 10.274071576037072, Learning Rate: 0.1
+2018-12-09 11:48:20,398 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:48:20,398 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:48:20,452 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 11:49:46,541 - lstmimpl - INFO - Epoch: 3, Iteration: 45800, Encoder Loss: 7.952308759458899, Decoder Loss: 6.290945855420357, Learning Rate: 0.1
+2018-12-09 11:49:46,542 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:49:46,542 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:49:46,620 - lstmimpl - INFO - English: i have a grenade enxp <eos> 
+
+2018-12-09 11:51:13,642 - lstmimpl - INFO - Epoch: 3, Iteration: 45900, Encoder Loss: 9.208460217799892, Decoder Loss: 8.510565311043697, Learning Rate: 0.1
+2018-12-09 11:51:13,643 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:51:13,644 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:51:13,692 - lstmimpl - INFO - English: i have a grenade enxp <eos> 
+
+2018-12-09 11:52:37,315 - lstmimpl - INFO - Epoch: 3, Iteration: 46000, Encoder Loss: 13.094684374056309, Decoder Loss: 14.414851517096903, Learning Rate: 0.1
+2018-12-09 11:52:37,316 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:52:37,316 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:52:37,410 - lstmimpl - INFO - English: i have a plan enxp <eos> 
+
+2018-12-09 11:54:01,214 - lstmimpl - INFO - Epoch: 3, Iteration: 46100, Encoder Loss: 9.025193986516287, Decoder Loss: 10.894233593354084, Learning Rate: 0.1
+2018-12-09 11:54:01,215 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:54:01,215 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:54:01,266 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 11:55:25,878 - lstmimpl - INFO - Epoch: 3, Iteration: 46200, Encoder Loss: 8.395247035299002, Decoder Loss: 6.933759253451594, Learning Rate: 0.1
+2018-12-09 11:55:25,879 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:55:25,879 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:55:25,932 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 11:56:51,199 - lstmimpl - INFO - Epoch: 3, Iteration: 46300, Encoder Loss: 15.638443332712555, Decoder Loss: 15.259485080164673, Learning Rate: 0.1
+2018-12-09 11:56:51,199 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:56:51,200 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:56:51,250 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 11:58:14,528 - lstmimpl - INFO - Epoch: 3, Iteration: 46400, Encoder Loss: 5.526977226993966, Decoder Loss: 7.259242793388517, Learning Rate: 0.1
+2018-12-09 11:58:14,529 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:58:14,530 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:58:14,580 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 11:59:38,090 - lstmimpl - INFO - Epoch: 3, Iteration: 46500, Encoder Loss: 10.020027366775242, Decoder Loss: 8.12989955008643, Learning Rate: 0.1
+2018-12-09 11:59:38,091 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 11:59:38,091 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 11:59:38,142 - lstmimpl - INFO - English: she has three nieces enxp <eos> 
+
+2018-12-09 12:01:01,162 - lstmimpl - INFO - Epoch: 3, Iteration: 46600, Encoder Loss: 16.232154712583448, Decoder Loss: 14.45074155086121, Learning Rate: 0.1
+2018-12-09 12:01:01,163 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:01:01,163 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:01:01,212 - lstmimpl - INFO - English: i have a boyfriend enxp <eos> 
+
+2018-12-09 12:02:24,701 - lstmimpl - INFO - Epoch: 3, Iteration: 46700, Encoder Loss: 8.504096019193405, Decoder Loss: 10.831422081340314, Learning Rate: 0.1
+2018-12-09 12:02:24,702 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:02:24,703 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:02:24,757 - lstmimpl - INFO - English: i have a visa enxp <eos> 
+
+2018-12-09 12:03:49,288 - lstmimpl - INFO - Epoch: 3, Iteration: 46800, Encoder Loss: 7.551272912742232, Decoder Loss: 6.817169866068661, Learning Rate: 0.1
+2018-12-09 12:03:49,289 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:03:49,290 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:03:49,408 - lstmimpl - INFO - English: i have a truck enxp <eos> 
+
+2018-12-09 12:05:13,281 - lstmimpl - INFO - Epoch: 3, Iteration: 46900, Encoder Loss: 8.211068633921608, Decoder Loss: 5.943599858468182, Learning Rate: 0.1
+2018-12-09 12:05:13,281 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:05:13,282 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:05:13,367 - lstmimpl - INFO - English: i have a nightmare enxp <eos> 
+
+2018-12-09 12:06:45,694 - lstmimpl - INFO - Epoch: 3, Iteration: 47000, Encoder Loss: 8.804725834001735, Decoder Loss: 14.859811554874632, Learning Rate: 0.1
+2018-12-09 12:06:45,695 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:06:45,696 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:06:45,747 - lstmimpl - INFO - English: she has short hair enxp <eos> 
+
+2018-12-09 12:08:17,818 - lstmimpl - INFO - Epoch: 3, Iteration: 47100, Encoder Loss: 9.982144494116737, Decoder Loss: 8.338632840519322, Learning Rate: 0.1
+2018-12-09 12:08:17,819 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:08:17,820 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:08:17,869 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 12:09:45,383 - lstmimpl - INFO - Epoch: 3, Iteration: 47200, Encoder Loss: 10.64956519993826, Decoder Loss: 13.948262704096996, Learning Rate: 0.1
+2018-12-09 12:09:45,384 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:09:45,385 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:09:45,434 - lstmimpl - INFO - English: i have a blessing enxp <eos> 
+
+2018-12-09 12:11:09,280 - lstmimpl - INFO - Epoch: 3, Iteration: 47300, Encoder Loss: 8.889886765019432, Decoder Loss: 7.206486462947192, Learning Rate: 0.1
+2018-12-09 12:11:09,281 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:11:09,281 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:11:09,353 - lstmimpl - INFO - English: she has short hair enxp <eos> 
+
+2018-12-09 12:12:33,409 - lstmimpl - INFO - Epoch: 3, Iteration: 47400, Encoder Loss: 8.959379170269791, Decoder Loss: 4.370651379308365, Learning Rate: 0.1
+2018-12-09 12:12:33,410 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:12:33,411 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:12:33,510 - lstmimpl - INFO - English: she has short hair enxp <eos> 
+
+2018-12-09 12:13:59,602 - lstmimpl - INFO - Epoch: 3, Iteration: 47500, Encoder Loss: 8.617443807258924, Decoder Loss: 6.203665541077057, Learning Rate: 0.1
+2018-12-09 12:13:59,603 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:13:59,603 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:13:59,656 - lstmimpl - INFO - English: she has short hair enxp <eos> 
+
+2018-12-09 12:15:25,596 - lstmimpl - INFO - Epoch: 3, Iteration: 47600, Encoder Loss: 8.628507081733591, Decoder Loss: 12.363768294133397, Learning Rate: 0.1
+2018-12-09 12:15:25,597 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:15:25,597 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:15:25,650 - lstmimpl - INFO - English: she has short hair enxp <eos> 
+
+2018-12-09 12:17:04,482 - lstmimpl - INFO - Epoch: 3, Iteration: 47700, Encoder Loss: 9.738608759269887, Decoder Loss: 7.598018144903934, Learning Rate: 0.1
+2018-12-09 12:17:04,483 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:17:04,483 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:17:04,608 - lstmimpl - INFO - English: i have a theory enxp <eos> 
+
+2018-12-09 12:18:38,506 - lstmimpl - INFO - Epoch: 3, Iteration: 47800, Encoder Loss: 8.59592673670909, Decoder Loss: 6.969010583833076, Learning Rate: 0.1
+2018-12-09 12:18:38,507 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:18:38,508 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:18:38,572 - lstmimpl - INFO - English: i have a theory enxp <eos> 
+
+2018-12-09 12:20:05,686 - lstmimpl - INFO - Epoch: 3, Iteration: 47900, Encoder Loss: 8.41652203070245, Decoder Loss: 6.964819446748929, Learning Rate: 0.1
+2018-12-09 12:20:05,686 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:20:05,687 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:20:05,761 - lstmimpl - INFO - English: i have a theory enxp <eos> 
+
+2018-12-09 12:21:26,893 - lstmimpl - INFO - Models saved successfully!
+2018-12-09 12:21:35,337 - lstmimpl - INFO - Epoch: 4, Iteration: 48000, Encoder Loss: 6.685713031586686, Decoder Loss: 13.126114048540092, Learning Rate: 0.1
+2018-12-09 12:21:35,338 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:21:35,338 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:21:35,398 - lstmimpl - INFO - English: i have a dictionary enxp <eos> 
+
+2018-12-09 12:23:01,092 - lstmimpl - INFO - Epoch: 4, Iteration: 48100, Encoder Loss: 7.3805772510307435, Decoder Loss: 5.695621968879023, Learning Rate: 0.1
+2018-12-09 12:23:01,093 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:23:01,093 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:23:01,165 - lstmimpl - INFO - English: i have a book enxp <eos> 
+
+2018-12-09 12:24:29,004 - lstmimpl - INFO - Epoch: 4, Iteration: 48200, Encoder Loss: 10.115006059568143, Decoder Loss: 15.670631490299206, Learning Rate: 0.1
+2018-12-09 12:24:29,005 - lstmimpl - INFO - Testing Translate: German to English
+2018-12-09 12:24:29,006 - lstmimpl - INFO - German: ich habe ein buch dexp <eos>
+2018-12-09 12:24:29,057 - lstmimpl - INFO - English: i have a book enxp <eos> 
+

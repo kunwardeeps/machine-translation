@@ -30,23 +30,25 @@ class lstmimpl(object):
         self.outputdim = outputdim
         self.losses = losses
 
-        self.hprev = np.zeros((hiddendim , 1))#previous batch hidden state stored
-        self.sprev = np.zeros((hiddendim , 1))#previous batch hidden state stored
+        # Previous batch hidden state stored
+        self.hprev = np.zeros((hiddendim , 1))
+        self.sprev = np.zeros((hiddendim , 1))
 
-
-        #parameters
-        self.Why = np.random.randn(outputdim, hiddendim)*0.01#[y x h]
-        self.Wf = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
-        self.Wi = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
-        self.Wc = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
-        self.Wo = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 # input to hidden
+        # Parameters
+        self.Why = np.random.randn(outputdim, hiddendim)*0.01
+        # Input to hidden layers
+        self.Wf = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 
+        self.Wi = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 
+        self.Wc = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 
+        self.Wo = np.random.randn(hiddendim, hiddendim + inputdim)*0.01 
+        # Biases
         self.by = np.zeros((outputdim, 1))
-        self.bf = np.zeros((hiddendim, 1)) # output bias
-        self.bi = np.zeros((hiddendim, 1)) # output bias
-        self.bc = np.zeros((hiddendim, 1)) # output bias
-        self.bo = np.zeros((hiddendim, 1)) # output bias
+        self.bf = np.zeros((hiddendim, 1)) 
+        self.bi = np.zeros((hiddendim, 1)) 
+        self.bc = np.zeros((hiddendim, 1)) 
+        self.bo = np.zeros((hiddendim, 1)) 
 
-        #the Adagrad gradient update relies upon having a memory of the sum of squares of dparams
+        # Parameters for adagrad update
         self.mWhy =  np.zeros_like(self.Why)
         self.mWf =  np.zeros_like(self.Wf)
         self.mWi =  np.zeros_like(self.Wi)
@@ -70,6 +72,7 @@ class lstmimpl(object):
         hs[-1] = np.copy(self.hprev)
         s[-1] = np.copy(self.sprev)  
 
+        # Initialize deriviatives
         dWhy = np.zeros_like(self.Why)
         dWf = np.zeros_like(self.Wf)
         dWi = np.zeros_like(self.Wi)
@@ -163,23 +166,24 @@ class lstmimpl(object):
             # Update values for future hidden value 
             dhnext = dxh[(xh[t].shape[0]-self.hiddendim):,:]
 
+        # Use clipping to avoid exploding gradients
         for dparam in [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby]:
-            np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
+            np.clip(dparam, -5, 5, out=dparam) 
 
-
-        #update RNN parameters according to Adagrad
+        # Apply Adagrad for updating parameters
         for param, dparam, mem in zip([self.Wf, self.Wi, self.Wc, self.Wo, self.Why, self.bf, self.bi, self.bc, self.bo, self.by], 
                                 [dWf, dWi, dWc,dWo,dWhy, dbf,dbi,dbc,dbo, dby], 
                                 [self.mWf, self.mWi,self.mWc,self.mWo, self.mWhy,self.mbf,self.mbi,self.mbc,self.mbo, self.mby]):
             mem += dparam * dparam
-            param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+            param += -self.learning_rate * dparam / np.sqrt(mem + 1e-8) 
         
         self.hprev = hs[len(inputs)-1]
         self.sprev = s[len(inputs)-1]
 
         return loss
     
-    def getHidden(self, xin):
+    # Returns the h vector and current state
+    def get_hidden(self, xin):
         h = np.zeros_like(self.hprev)
         sp = np.zeros_like(self.sprev)
         for t in range(len(xin)): 
@@ -194,11 +198,14 @@ class lstmimpl(object):
             h = o * np.tanh(sp)             
         return h, sp
         
+    # Returns the indices of translated words in target vocabulary along with candidate probabilities
     def translate(self, eos_index):
         h = self.hprev
         sp = self.sprev
         x = np.zeros((self.inputdim,1))
         y = np.zeros((self.inputdim,1))
+        top_five_probabilites = []
+        top_five_indices = []
         indices = []
         for ii in range(20):
             xh = np.hstack((x.ravel(), h.ravel())).reshape(self.inputdim+self.hiddendim,1)
@@ -210,6 +217,11 @@ class lstmimpl(object):
             h = o * np.tanh(sp)
             y = np.dot(self.Why, h) + self.by
             p = np.exp(y) / np.sum(np.exp(y))
+            if ii == 3:
+                p_flat = np.reshape(p, len(p))
+                top_five_indices = (-p_flat).argsort()[:5].tolist()
+                for index in top_five_indices:
+                    top_five_probabilites.append(p_flat[index])
             i = p.argmax()
             x = np.zeros((self.inputdim, 1))
             x[i] = 1
@@ -217,8 +229,9 @@ class lstmimpl(object):
             if(eos_index == i):
                 break
 
-        return indices
-            
+        return indices, top_five_indices, top_five_probabilites
+
+# Save models
 def persist_models(n, encoder, decoder):
     name1 = 'models/encoder_' + str(n) + '.model'
     with open(name1, 'wb') as handle:
@@ -238,19 +251,45 @@ def load_persisted_models(encoder_model_file_name, decoder_model_file_name):
     logger.info("Models loaded successfully!")
     return encoder, decoder
 
+# Test a translation while training
 def test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2):
     logger.info('Testing Translate: German to English')
     test = "ich habe ein buch dexp <eos>"
     logger.info('German: '+ test)
     testArray = test.split()
     x = [word_to_index[w] for w in testArray[:-1]]
-    htest, stest = model1.getHidden(x)
+    htest, stest = model1.get_hidden(x)
     model2.hprev = htest 
     model2.sprev = stest
     eos_index = word_to_index2['<eos>'.strip()]
-    oTest = model2.translate(eos_index)
+    oTest, top_five_indices, top_five_probabilites = model2.translate(eos_index)
+    new_keys = [index_to_word2[i] for i in top_five_indices]
+    new_dict = dict(zip(new_keys, top_five_probabilites))
     txt = ' '.join(index_to_word2[i] for i in oTest)
+    logger.info('Probabilites for word {} : {}'.format(testArray[3], new_dict))
     logger.info('English: {} \n'.format(txt))
+
+def test_translations(word_to_index, word_to_index2, index_to_word2, model1, model2, n):
+    sentences = open('test_sentences.txt', 'r').read().split('\n')
+    logger.info('Testing Translate: German to English')
+    output = open("TestTranslationsOutput/myfile_{}.txt".format(n), "w")
+    for test in sentences:
+        logger.info('German: '+ test)
+        testArray = test.split()
+        x = [word_to_index[w] for w in testArray[:-1]]
+        htest, stest = model1.get_hidden(x)
+        model2.hprev = htest 
+        model2.sprev = stest
+        eos_index = word_to_index2['<eos>'.strip()]
+        oTest, top_five_indices, top_five_probabilites = model2.translate(eos_index)
+        new_keys = [index_to_word2[i] for i in top_five_indices]
+        new_dict = dict(zip(new_keys, top_five_probabilites))
+        txt = ' '.join(index_to_word2[i] for i in oTest)
+        logger.info('Probabilites for word {} : {}'.format(testArray[3], new_dict))
+        output.write(txt)
+        output.write('\n')
+        logger.info('English: {} \n'.format(txt))
+    output.close()
             
 def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name):
     logger.info("=========================Execution Starts===========================")
@@ -281,7 +320,7 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
 
     if load_models == True:
         model1, model2 = load_persisted_models(encoder_model_file_name, decoder_model_file_name)
-        logger.info("Encoder loss after persisting: {}".format(model1.losses))
+        test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2)
     else:
         model1 = lstmimpl(len(vocab), len(vocab), 100, learning_rate, False, [])
         model2 = lstmimpl(len(vocab2), len(vocab2), 100, learning_rate, True, [])
@@ -307,11 +346,11 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
             y = [word_to_index2[w] for w in words_list]
             loss2 = model2.train(x, y)
 
-            if n%100==0:
+            if n%500==0:
                 logger.info('Epoch: {}, Iteration: {}, Encoder Loss: {}, Decoder Loss: {}, Learning Rate: {}'.format(epoch, n, loss, loss2, learning_rate))
                 model1.add_loss(loss)
                 model2.add_loss(loss2)
-                test_translation(word_to_index, word_to_index2, index_to_word2, model1, model2)
+                test_translations(word_to_index, word_to_index2, index_to_word2, model1, model2, n)
                 
             model1.hprev = np.zeros((100,1))
             model1.sprev = np.zeros((100,1))
@@ -322,7 +361,6 @@ def start(epochs, load_models, encoder_model_file_name, decoder_model_file_name)
 
 if __name__ == "__main__":
     try:
-        logger.info(sys.argv)
         epochs = int(sys.argv[1])
         load_models = False
         if sys.argv[2] == 'Y':
